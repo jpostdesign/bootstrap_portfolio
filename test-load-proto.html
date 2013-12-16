@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<link href="css/style-test-load-proto.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+
+<!-- resize image dynamically on viewport -->
+<script>
+$(document).ready(function(e) {
+	(function() {
+
+var win = $(window);
+
+win.resize(function() {
+    
+    var win_w = win.width(),
+        win_h = win.height(),
+        $bg	= $("#changeThis");
+
+    // Load narrowest background image based on 
+    // viewport width, but never load anything narrower 
+    // that what's already loaded if anything.
+    var available = [
+		900, 1440
+    ];
+
+    var current = $bg.attr('src').match(/([0-9]+)/) ? RegExp.$1 : null;
+    
+    if (!current || ((current < win_w) && (current < available[available.length - 1]))) {
+      
+      var chosen = available[available.length - 1];
+      
+      for (var i=0; i<available.length; i++) {
+        if (available[i] >= win_w) {
+          chosen = available[i];
+          break;
+        }
+      }
+      
+      // Set the new image
+      $bg.attr('src', 'img/sfSkylineNight-' + chosen + '.jpg');
+	  
+	  var testBG = $("#changeThis").prop('src');
+      
+       // for testing...
+       console.log('Chosen background: ' + testBG);
+      
+    }
+
+    // Determine whether width or height should be 100%
+   /* if ((win_w / win_h) < ($bg.width() / $bg.height())) {
+      $bg.css({height: '100%', width: 'auto'});
+    } else {
+      $bg.css({width: '100%', height: 'auto'});
+    }
+	*/
+    
+  }).resize();
+  
+})(jQuery);
+});
+	</script>
+
+</head>
+
+<body>
+<header>
+<h1> Some text here</h1>
+<img id="changeThis" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" /> 
+</header>
+<section>
+<p>Fill up some space</p>
+<p>Fill up some space</p>
+<p>Fill up some space</p>
+<p>Fill up some space</p>
+<p>Fill up some space</p>
+<p>Fill up some space</p>
+<p>Fill up some space</p>
+<p>Fill up some space</p>
+<p>Fill up some space</p>
+</section>
+</body>
+</html>

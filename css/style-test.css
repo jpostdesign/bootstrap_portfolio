@@ -1,0 +1,20 @@
+/* customized css
+/////////////////
+///////////////// */
+
+.header h1   , .header h2, .header h3 , .header p{
+	color: white;
+	text-shadow: 0px 0px 10px #555555;
+}
+
+i.service-icon {
+  border: 0.8rem solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 6rem;
+  width: 14rem;
+  height: 14rem;
+  line-height: 13rem;
+  vertical-align: middle; 
+  text-align: center;
+}
