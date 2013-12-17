@@ -18,3 +18,16 @@ i.service-icon {
   vertical-align: middle; 
   text-align: center;
 }
+
+.inline-ul > li {
+    float:left;
+    margin-right:2.8rem;
+}
+
+.clearfloat {
+    clear:both;
+}
+.nav-caption {
+    color:#555555;
+    padding: 0rem 1.4rem;
+}
