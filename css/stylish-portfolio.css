@@ -111,6 +111,9 @@ body {
 	height: 100%;
 	width: 100%;
 	position: relative;
+    background-color:#b5c2d6;
+    
+/*
 	background-repeat: no-repeat;
 	background-position: center 0px;
 	background-image: url(../img/sf-skyline-night_03.jpg);
@@ -119,6 +122,7 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+*/
 }
 
 /* Intro */
