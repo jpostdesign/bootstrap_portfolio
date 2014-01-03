@@ -1,10 +1,38 @@
 /* customized css
 /////////////////
 ///////////////// */
+.btn {
+    margin:0.5rem;
+}
 
+.clearfloat {
+    clear:both;
+}
+
+.fa-linkedin-blue {
+    color:#0e76a8 ;
+}
+
+.fa-nav {
+    font-size:2.4rem;
+    color:#555555;
+    padding:0.5rem;
+    margin-left:1.05rem;
+    margin-right:1.05rem;
+}
+.float-left {
+    float:left;
+}
+.float-right {
+    float:right;
+}
 .header h1   , .header h2, .header h3 , .header p{
 	color: white;
 	text-shadow: 0px 0px 10px #555555;
+}
+
+.hr-grey hr { 
+    border-top-color:#aaa;
 }
 
 i.service-icon {
@@ -24,23 +52,13 @@ i.service-icon {
     margin-right:2.8rem;
 }
 
-.clearfloat {
-    clear:both;
+.margin-btm-lrg {
+    margin-bottom:4.8rem;
 }
+
 .nav-caption {
     color:#555555;
     padding: 0rem 1.4rem;
-}
-.fa-linkedin-blue {
-    color:#0e76a8 ;
-}
-
-.fa-nav {
-    font-size:2.4rem;
-    color:#555555;
-    padding:0.5rem;
-    margin-left:1.05rem;
-    margin-right:1.05rem;
 }
 .picturefillDiv {
     overflow:hidden;
