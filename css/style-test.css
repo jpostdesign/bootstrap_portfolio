@@ -1,12 +1,27 @@
 /* customized css
 /////////////////
 ///////////////// */
+body {
+	background-color: #FAFAFA;
+}
+code {
+	color: #6F6A78;
+	background-color: #E1E2E6;
+}
 .btn {
     margin:0.5rem;
 }
 
 .clearfloat {
     clear:both;
+}
+
+.experienceTitle {
+	font-weight:bold;
+	letter-spacing:0.1rem;
+}
+
+.experienceEmployer {
 }
 
 .fa-linkedin-blue {
@@ -26,10 +41,24 @@
 .float-right {
     float:right;
 }
-.header h1   , .header h2, .header h3 , .header p{
-	color: white;
-	text-shadow: 0px 0px 10px #555555;
+.grey-transparent {
+	background-color: rgba(20,30,50,0.35);
+	padding: 2.4rem;
+	display:inline-block;
+	width:auto;
 }
+.graphicText {
+	color: rgba(255,255,255,1);
+	text-shadow: 1px 2px 5px #333;
+	letter-spacing:0.1rem;
+}
+/* 
+.header h1   , .header h2, .header h3 , .header p{
+	color: rgba(255,255,255,1);
+	text-shadow: 1px 2px 5px #333;
+	letter-spacing:0.1rem;
+}
+*/
 
 .hr-grey hr { 
     border-top-color:#aaa;
@@ -60,14 +89,49 @@ i.service-icon {
     color:#555555;
     padding: 0rem 1.4rem;
 }
-.picturefillDiv {
+.picturefillDivBG {
     overflow:hidden;
     width:100%;
-    max-height:100%;
+    height: 100%;
     position:absolute;
-    top:0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.picturefillDivBG img, .picturefillDiv img {
+    max-width: 100%;
 }
 
 .vert-text {
     position:relative;
+}
+
+
+/* backgrounds setup to change */
+.topBG {
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-color:#b5c2d6;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../img/background/bg_sf_bay_bridge_small.jpg);
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@media screen and (min-width: 569px) {
+    .topBG {
+        background-image: url(../img/background/bg_sf_bay_bridge_med.jpg);
+}
+}
+
+@media screen and (min-width: 1100px) {
+	.topBG {
+	background-image: url(../img/background/bg_sf_bay_bridge_large.jpg);
+}
 }
