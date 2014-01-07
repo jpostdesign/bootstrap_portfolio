@@ -8,6 +8,12 @@ code {
 	color: #6F6A78;
 	background-color: #E1E2E6;
 }
+#sidebar-wrapper i:hover,
+#sidebar-wrapper i:focus,
+#sidebar-wrapper i:active
+ {
+	color:#E6E6E6;
+}
 .btn {
     margin:0.5rem;
 }
@@ -42,8 +48,8 @@ code {
     float:right;
 }
 .grey-transparent {
-	background-color: rgba(20,30,50,0.35);
-	padding: 2.4rem;
+	background-color: rgba(20,30,50,0.55);
+	padding: 1.4rem;
 	display:inline-block;
 	width:auto;
 }
@@ -101,29 +107,52 @@ i.service-icon {
 .picturefillDivBG img, .picturefillDiv img {
     max-width: 100%;
 }
-
 .vert-text {
     position:relative;
 }
 
 
-/* backgrounds setup to change */
-.topBG {
-	display: table;
-	height: 100%;
-	width: 100%;
-	position: relative;
-	background-color:#b5c2d6;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-image: url(../img/background/bg_sf_bay_bridge_small.jpg);
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+/* Full Page Image Header Area */
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_bay_bridge_small.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
+@media (max-width: 768px) {
+	
+.header {
+	background: url(../img/background/bg_sf_bay_bridge_small.jpg) no-repeat center center scroll; 
+  }
+  
+  */
+
+  .callout {
+	background: url(../img/callout.jpg) no-repeat center center scroll; 
+  }
+
+}
+
+/* backgrounds setup to change */
+.topBG {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*
 @media screen and (min-width: 569px) {
     .topBG {
         background-image: url(../img/background/bg_sf_bay_bridge_med.jpg);
@@ -135,3 +164,4 @@ i.service-icon {
 	background-image: url(../img/background/bg_sf_bay_bridge_large.jpg);
 }
 }
+*/
