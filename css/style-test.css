@@ -21,13 +21,10 @@ code {
 .clearfloat {
     clear:both;
 }
-
+.educationDegree,
 .experienceTitle {
 	font-weight:bold;
 	letter-spacing:0.1rem;
-}
-
-.experienceEmployer {
 }
 
 .fa-linkedin-blue {
@@ -85,6 +82,10 @@ i.service-icon {
 .inline-ul > li {
     float:left;
     margin-right:2.8rem;
+}
+
+.margin-center {
+	margin:auto;
 }
 
 .margin-btm-lrg {

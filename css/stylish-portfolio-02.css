@@ -108,7 +108,7 @@ body {
 /* Intro */
 
 .intro {
-  padding: 50px 0;
+  padding: 3.4rem 0;
 }
 
 /* Services */
@@ -141,7 +141,7 @@ i.service-icon {
   color: #ffffff;
   display: table;
   height: 400px;
-  width: 100%;
+  width: auto;
   background: url(../img/callout.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -169,7 +169,7 @@ i.service-icon {
 .call-to-action {
   color: #ffffff;
   background: #0a5175;
-  padding: 50px 0;
+  padding: 3.4rem 0;
 }
 
 .call-to-action .btn {
@@ -184,8 +184,11 @@ i.service-icon {
 
 /* Footer */
 
-footer {
-  padding: 100px 0;
+.footer {
+  padding: 1.4rem 0;
+  background: #0a5175;
+  color: rgba(255,255,255,1);
+  letter-spacing:0.1rem;
 }
 
 .top-scroll {
