@@ -224,7 +224,10 @@ a:focus {
   outline-offset: -2px;
 }
 img {
-  vertical-align: middle;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+  	vertical-align: middle;
 }
 .img-responsive {
   display: block;
