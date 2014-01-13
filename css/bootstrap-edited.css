@@ -228,6 +228,7 @@ img {
 	margin: 0 auto;
 	max-width: 100%;
   	vertical-align: middle;
+	height:auto;
 }
 .img-responsive {
   display: block;
