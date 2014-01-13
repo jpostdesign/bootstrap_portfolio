@@ -80,7 +80,9 @@ i.service-icon {
   vertical-align: middle; 
   text-align: center;
 }
-
+.img-border {
+	border:0.8rem solid #428bca;
+}
 .inline-ul > li {
     float:left;
     margin-right:2.8rem;
@@ -240,7 +242,7 @@ i.service-icon {
 	 .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{margin-bottom:4em;}
-        #cboxTitle{position:absolute; padding:0% 5% 0% 5%; bottom:35px; left:0; text-align:center; margin-left:4%; width:80%; color:#666; -webkit-border-radius: 5px; border-radius: 5px; border: 4px solid rgba(100,100,100,.25); background: rgba(255,255,255,.9);}
+        #cboxTitle{position:absolute; padding:0% 5% 0% 5%; bottom:35px; left:0; text-align:center; margin-left:auto; margin-right:auto; width:100%; color:#666; border: 0.4rem solid rgba(100,100,100,.25); background: rgba(255,255,255,.9);}
         #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#666;}
         #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
         #cboxPrevious{position:absolute; bottom:0; left:0px; background:url(../images/controls.png) -75px 0px no-repeat; width:25px; height:25px; text-indent:-9999px;}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Picturefill</title>
+		<script src="Picturefill_files/matchmedia.js"></script>
+		<script src="Picturefill_files/picturefill.js"></script>
+		<style>
+			body { font-family: sans-serif }
+			img {  max-width: 100% }
+			.testSpanClass { margin-left: 30px; margin-left:30px;}
+		</style>
+	</head>
+	<body>
+		
+		<h1>Picturefill: A &lt;picture&gt; element polyfill</h1>
+				
+		<p>For more info: <a href="http://github.com/scottjehl/picturefill">see project home.</a></p>
+        
+		<span class="picture" data-picture data-class="parentSpanClass" data-title="Statue at The Bayon temple in Cambodia" data-alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+        <span class="specificSpan-sml" data-src="Picturefill_files/small.jpg"></span>
+        <span class="specificSpan-med" data-src="Picturefill_files/medium.jpg"     data-media="(min-width: 400px)"></span>
+        <span class="specificSpan-lrg" data-src="Picturefill_files/large.jpg"      data-media="(min-width: 800px)"></span>
+
+			<!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+			<noscript><img src="external/imgs/small.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia"></noscript>
+		</span>
+        
+	
+
+</body></html>
