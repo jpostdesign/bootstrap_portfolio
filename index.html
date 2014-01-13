@@ -94,21 +94,21 @@
           </div>
         </div>
         <div class="row">
-        	<div class="col-sm-4">
-            <img class="img-responsive" alt="beaver plus duck equals platypus" title="beaver plus duck equals platypus" src="img/platypus/outline_beaver_small.png" >
-            </div>
-          <div class="col-sm-4">
-            	<img class="img-responsive" alt="beaver plus duck equals platypus" title="beaver plus duck equals platypus" src="img/platypus/outline_duck_small.png" >
-            </div>
-          <div class="col-sm-4">
-            	<img class="img-responsive" alt="beaver plus duck equals platypus" title="beaver plus duck equals platypus" src="img/platypus/outline_platypus_small.png" >
+       	  <div class="col-sm-4">
+            <img alt="beaver plus" src="img/platypus/outline_beaver.svg" onerror="this.onerror=null; this.src='img/platypus/outline_beaver_large.png'" >
+           </div>
+          <div class="col-sm-4 margin-center">
+            	<img alt="duck equals" src="img/platypus/outline_duck.svg" onerror="this.onerror=null; this.src='img/platypus/outline_duck_large.png'" >
+          </div>
+          <div class="col-sm-4 margin-center margin-btm-lrg">
+            	<img alt="platypus" src="img/platypus/outline_platypus.svg" onerror="this.onerror=null; this.src='img/platypus/outline_platypus_large.png'" >
             </div>
         </div>
           <div class="row">
           	<div class="col-md-8 col-md-offset-2">
             <div class="text-center">
             <h2><a href="http://linkedin.com/in/jpostdesign"><i class="fa fa-linkedin-square fa-linkedin-blue"></i></a> Connect with me on LinkedIn</h2>
-            <p> Find me on LinkedIn at <a href="http://linkedin.com/in/jpostdesign">http://linkedin.com/in/jpostdesign</a></p>
+            <p class="margin-btm-lrg"> Find me at <a href="http://linkedin.com/in/jpostdesign">http://linkedin.com/in/jpostdesign</a></p>
             </div> 
             
               
@@ -247,25 +247,56 @@
             <hr>
           </div>
         </div>
-        <div class="row">
-          <div class="text-center">
+        <div class="row margin-btm-med">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
             <div class="portfolio-item" id="webDesign">
-              <a href="#"><img class="img-portfolio img-responsive img-circle" src="img/portfolio-1.jpg"></a>
-              <h4>Web Design</h4>
+            	<h4>Web Design</h4>
+              <a href="#"><img class="img-circle" src="img/portfolio-1.jpg"></a>
             </div>
           </div>
-          <div class="text-center">
+        </div>
+        <div class="row margin-btm-med">
+        	<div class="col-sm-6">
+            <a title="&quot;Responsive Wireframe&quot; &bull; Layout, Breakpoints, Adobe Edge Reflow" href="img/webdesign/full/wireframe-edge-reflow-FULL.jpg" rel="example1"><img class="img-circle" src="img/portfolio-1.jpg"></a>
+            </div>
+            <div class="col-sm-6">
+            	<a title="beaver" href="img/webdesign/full/wireframe-edge-reflow-FULL.jpg" rel="example1">
+                
+                <span class="picturefillDiv" data-picture data-alt="San Francisco">
+			<span data-src="img/platypus/outline_beaver_small.png"></span>
+			<span data-src="img/platypus/outline_beaver_small.png" data-media="(min-width: 600px)"></span>
+			<span data-src="img/platypus/outline_beaver_large.png" data-media="(min-width: 1100px)"></span>
+
+			 <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+			<noscript><img src="img/background/bg_palaceArts_small.jpg" alt="San Francisco"></noscript>
+		</span>
+                
+                
+                
+                </a>
+           </div>
+         </div>
+         <div class="row margin-btm-xlrg">
+         	<div class="col-sm-6">
+            <a title="web design circle image" href="img/webdesign/full/wireframe-edge-reflow-FULL.jpg" rel="example1"><img class="img-circle" src="img/portfolio-1.jpg"></a>
+            </div>
+           <div class="col-sm-6">
+            <a title="beaver" href="img/webdesign/full/wireframe-edge-reflow-FULL.jpg" rel="example1"><img src="img/platypus/outline_beaver_small.png"></a>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
             <div class="portfolio-item" id="userExperience">
-              <a href="#"><img class="img-portfolio img-responsive img-circle" src="img/portfolio-2.jpg"></a>
-              <h4>UI/UX</h4>
+            	<h4>UI/UX</h4>
+              <a href="#"><img class="img-circle" src="img/portfolio-2.jpg"></a>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="text-center">
             <div class="portfolio-item" id="printDesign">
-              <a href="#"><img class="img-portfolio img-responsive img-circle" src="img/portfolio-3.jpg"></a>
-              <h4>Visual Design</h4>
+            	<h4>Visual Design</h4>
+              <a href="#"><img class="img-circle" src="img/portfolio-3.jpg"></a>
             </div>
           </div>
         </div>
@@ -610,6 +641,36 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
         });
       });
     </script>
+    
+    <!-- Colorbox script -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="scripts/jquery.colorbox.js"></script>
+<script type="text/javascript">
+			$(document).ready(function(){
+				//Examples of how to assign the ColorBox event to elements
+				$("a[rel='example1']").colorbox();
+				$("a[rel='example2']").colorbox({transition:"fade"});
+				$("a[rel='example3']").colorbox({transition:"none", width:"75%", height:"75%"});
+				$("a[rel='example4']").colorbox({slideshow:true});
+				$(".example5").colorbox();
+				$(".example6").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+				$(".example7").colorbox({width:"80%", height:"80%", iframe:true});
+				$(".example8").colorbox({width:"50%", inline:true, href:"#inline_example1"});
+				$(".example9").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
 
   </body>
 
