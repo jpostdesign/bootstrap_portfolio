@@ -17,9 +17,6 @@
     <link href="css/stylish-portfolio-02.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style-test.css" rel="stylesheet">
-    <script src="js/matchmedia.js"></script>
-    <script src="js/picturefill.js"></script>   
-   
   </head>
 
   <body>
@@ -50,22 +47,6 @@
 	<div class="bgUnderCover-topBG">
     <div id="top" class="topBG">
       <div class="vert-text">
-      
-          <!-- picturefill background - done in CSS instead to get best of cover size and file size combo
-
-          <div class="maxWidthDiv">
-          <div class="picturefillDivBG">
-            <span class="picturefillSpan" data-picture data-alt="San Francisco">
-			<span data-src="img/background/bg_sfSkylineNight_small.jpg"></span>
-			<span data-src="img/background/bg_sfSkylineNight_med.jpg" data-media="(min-width: 600px)"></span>
-			<span data-src="img/background/bg_sfSkylineNight_large.jpg" data-media="(min-width: 1100px)"></span> -->
-
-			 <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. 
-			<noscript><img src="img/background/bg_palaceArts_small.jpg" alt="San Francisco"></noscript>
-		</span>
-            </div>
-          </div>
--->
         <div class="grey-transparent">
         <h1 class="graphicText">jpost-design</h1>
         <h2 class="graphicText"><em>From</em> Front End Dev <em>To </em> Visual Design</h2>
@@ -206,6 +187,7 @@
         </div>
       </div>
     </section>
+    </article>
     <!-- /Services -->
 
     <!-- Callout -->
@@ -223,82 +205,241 @@
     </div>
     -->
     
-    <section>
-		<div class="callout">
-		<div class="vert-text">
-		<div class="grey-transparent">
-        <h2 class="graphicText">Hi there! Nice to see you didn't skip ahead :)</h2>
+ 
+    
+    	<div class="bgUnderCover-freebieBG">
+        <div id="top" class="freebieBG">
+          <div class="vert-text">
+            <div class="grey-transparent">
+            <h2 class="graphicText">Hi there! Nice to see you didn't skip ahead :)</h2>
           <p class="graphicText">Or you came back?</p>
           <h3 class="graphicText">Anyways, you deserve a freebie</h3>
           <a href="img/facebook_guide.pdf" class="btn btn-lg btn-default">Free Facebook <br />Guidelines PDF</a>
           <p class="graphicText">Single page PDF I authored as a starting point to increase engagement and fan base.</p>
-      </div>
-      </div>
-      </div>
-    </section>
+            </div>
+                
+          </div>
+        </div>
+        </div>
+
     <!-- /Callout -->
 
     <!-- Portfolio -->
+    <article>
     <section id="portfolio" class="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-md-offset-4 text-center">
             <h3>My Work</h3>
-            <hr>
+            	<div class="hr-grey clearfloat">
+                <hr>
+              </div>
           </div>
         </div>
         <div class="row margin-btm-med">
           <div class="col-sm-8 col-sm-offset-2 text-center">
             <div class="portfolio-item" id="webDesign">
-            	<h4>Web Design</h4>
-              <a href="#"><img class="img-circle img-border" src="img/portfolio-1.jpg"></a>
+            		<h4>Web Design</h4>
+              <a title="&quot;Interactive Dynamic Map of 65-plus Farmers Markets&quot; &bull; Icons, Google API, PHP, MySQL" href="img/web_design/full/full_google_map_screenshot.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Interactive Dynamic Google Map">
+                    <span data-src="img/web_design/thumbs/thumb_google_map_screenshot_small.png"></span>
+                    <span data-src="img/web_design/thumbs/thumb_google_map_screenshot_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/web_design/thumbs/thumb_google_map_screenshot_large.png" alt="Interactive Dynamic Google Map"></noscript>
+                </span>
+             </a>
             </div>
           </div>
         </div>
-        <div class="row margin-btm-med">
+        <div class="row">
         	<div class="col-sm-6">
-            <a title="&quot;Responsive Wireframe&quot; &bull; Layout, Breakpoints, Adobe Edge Reflow" href="img/webdesign/full/wireframe-edge-reflow-FULL.jpg" rel="example1"><img class="img-circle" src="img/portfolio-1.jpg"></a>
+            <a title="&quot;Utopia iPad Magazine&quot; &bull; InDesign, Adobe Digital Publishing Suite, After Effects" href="img/web_design/full/full_rubix_utopia_app.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Utopia iPad Magazine App">
+                    <span data-src="img/web_design/thumbs/thumb_rubix_utopia_app_small.png"></span>
+                    <span data-src="img/web_design/thumbs/thumb_rubix_utopia_app_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/web_design/thumbs/thumb_rubix_utopia_app_large.png" alt="Utopia iPad Magazine App"></noscript>
+                </span>
+             </a>
             </div>
             <div class="col-sm-6">
-            	<a title="beaver" href="img/webdesign/full/wireframe-edge-reflow-FULL.jpg" rel="example1">
-                
-                <span data-class="img-circle"  data-picture data-alt="San Francisco">
-			<span class="img-circle" data-src="img/platypus/outline_beaver_small.png"></span>
-			<span class="img-circle" data-src="img/platypus/outline_beaver_small.png" data-media="(min-width: 600px)"></span>
-			<span class="img-circle" data-src="img/platypus/outline_beaver_large.png" data-media="(min-width: 1100px)"></span>
-
-			 <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
-			<noscript><img src="img/background/bg_palaceArts_small.jpg" alt="San Francisco"></noscript>
-		</span>
-                
-                
-                
-                </a>
+            	<a title="<a href='simulatedChat--Jason_Post.html' target='_blank'>&quot;Proof of Concept jQuery Chat for Monitise &quot;</a> &bull; Bootstrap, jQuery, Icon Design Link" href="img/web_design/full/full_simulated_chat.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Proof of Concept jQuery Chat for Monetize">
+                    <span data-src="img/web_design/thumbs/thumb_simulated_chat_small.png"></span>
+                    <span data-src="img/web_design/thumbs/thumb_simulated_chat_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/web_design/thumbs/thumb_simulated_chat_large.png" alt="Simulated jQuery Chat App"></noscript>
+                </span>
+             </a>
            </div>
-         </div>
-         <div class="row margin-btm-xlrg">
-         	<div class="col-sm-6">
-            <a title="web design circle image" href="img/webdesign/full/wireframe-edge-reflow-FULL.jpg" rel="example1"><img class="img-circle" src="img/portfolio-1.jpg"></a>
-            </div>
-           <div class="col-sm-6">
-            <a title="beaver" href="img/webdesign/full/wireframe-edge-reflow-FULL.jpg" rel="example1"><img src="img/platypus/outline_beaver_small.png"></a>
-            </div>
         </div>
+        <div class="row">
+        	<div class="col-sm-6">
+            <a title="&quot;PCFMA Responsive Prototype Process&quot; &bull; Site Architecture, Visual Design, Adobe Fireworks, Adobe Edge Inspect, Adobe Edge Reflow, HTML5, CSS3" href="img/web_design/full/full_responsive_design_process.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Facebook Growth Graph">
+                    <span data-src="img/web_design/thumbs/thumb_responsive_design_process_small.png"></span>
+                    <span data-src="img/web_design/thumbs/thumb_responsive_design_process_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/web_design/thumbs/thumb_responsive_design_process_large.png" alt="User Experience Gallery Management"></noscript>
+                </span>
+             </a>
+            </div>
+            <div class="col-sm-6">
+            	<a title="&quot;Adobe Edge Reflow Responsive Design Wireframe &quot; &bull; HTML5, CSS3, Adobe Edge Reflow Link" href="img/web_design/full/full_edge_reflow.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Adobe Edge Reflow Responsive Design Wireframe">
+                    <span data-src="img/web_design/thumbs/thumb_edge_reflow_small.png"></span>
+                    <span data-src="img/web_design/thumbs/thumb_edge_reflow_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/web_design/thumbs/thumb_edge_reflow_large.png" alt="Adobe Edge Reflow Responsive Design Wireframe"></noscript>
+                </span>
+             </a>
+           </div>
+           	<div class="hr-grey clearfloat margin-btm-lrg">
+                <hr>
+              </div>
+        </div>
+
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2 text-center">
             <div class="portfolio-item" id="userExperience">
-            	<h4>UI/UX</h4>
-              <a href="#"><img class="img-circle" src="img/portfolio-2.jpg"></a>
+            	<h4>UI / UX</h4>
+              <a title="User Experience Gallery Design at UH Manoa ArtMania &bull; Crowd Flow, Gallery Design, Signage" href="img/user_experience/full/full_art_mania_ux_combined.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="User Experience Gallery Design UH Manoa ArtMania">
+                    <span data-src="img/user_experience/thumbs/thumb_art_mania_ux_combined_small.png"></span>
+                    <span data-src="img/user_experience/thumbs/thumb_art_mania_ux_combined_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/user_experience/thumbs/thumb_art_mania_ux_combined_large.png" alt="User Experience Gallery Design UH Manoa ArtMania"></noscript>
+                </span>
+             </a>
             </div>
           </div>
         </div>
+        
+        
+        <div class="row">
+        	<div class="col-sm-6">
+            <a title="User Experience Gallery Management - UH Manoa Arts Department Scholarship Awards &bull; Crowd Flow, Signage, Gallery Design" href="img/user_experience/full/full_uh_manoa_scholarship_awards_combined_med.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Facebook Growth Graph">
+                    <span data-src="img/user_experience/thumbs/thumb_uh_manoa_scholarship_awards_combined_small.png"></span>
+                    <span data-src="img/user_experience/thumbs/thumb_uh_manoa_scholarship_awards_combined_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/user_experience/thumbs/thumb_uh_manoa_scholarship_awards_combined_large.png" alt="User Experience Gallery Management"></noscript>
+                </span>
+             </a>
+            </div>
+            <div class="col-sm-6">
+            	<a title="Facebook Engagement and Fan Growth &bull; Insights, Excel" href="img/user_experience/full/full_facebook_insights_vallejo_line_graph_growth_and_engagement.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Facebook Engagement Graph">
+                    <span data-src="img/user_experience/thumbs/thumb_facebook_insights_vallejo_line_graph_growth_and_engagement_small.png"></span>
+                    <span data-src="img/user_experience/thumbs/thumb_facebook_insights_vallejo_line_graph_growth_and_engagement_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/user_experience/thumbs/thumb_facebook_insights_vallejo_line_graph_growth_and_engagement_large.png" alt="Facebook Engagement Graph"></noscript>
+                </span>
+             </a>
+           </div>
+        </div>
+        
+        
+        
+        <div class="row">
+        	<div class="col-sm-6">
+            <a title="Growth of 19 Unique Facebook Pages &bull; Insights, Google Docs" href="img/user_experience/full/full_facebook_page_likes_and_growth_bar_chart_graph.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Facebook Growth Graph">
+                    <span data-src="img/user_experience/thumbs/thumb_facebook_page_likes_and_growth_bar_chart_graph_small.png"></span>
+                    <span data-src="img/user_experience/thumbs/thumb_facebook_page_likes_and_growth_bar_chart_graph_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/user_experience/thumbs/thumb_facebook_page_likes_and_growth_bar_chart_graph_large.png" alt="Facebook Engagement Graph"></noscript>
+                </span>
+             </a>
+            </div>
+            <div class="col-sm-6">
+            	<a title="Mobile Redirect Improvement from 26% to 100% &bull; Google Analytics" href="img/user_experience/full/full_pcfma_web_mobile_redirect_large.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Google Analytics Mobile Redirect Improvement">
+                    <span data-src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_small.png"></span>
+                    <span data-src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" class="img-circle img-border" src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_large.png" alt="Google Analytics Mobile Redirect Improvement"></noscript>
+                </span>
+             </a>
+           </div>
+           	<div class="hr-grey clearfloat margin-btm-lrg">
+                <hr>
+              </div>
+        </div>
+         
         <div class="row">
           <div class="text-center">
             <div class="portfolio-item" id="printDesign">
             	<h4>Visual Design</h4>
-              <a href="#"><img class="img-circle" src="img/portfolio-3.jpg"></a>
+              <a title="Fundraising tri-fold, produced for Fresh Approach &bull; Branding, Copy Editing, Graphic Design, Adobe Illustrator" href="img/visual_design/full/full_fresh_approach_trifold.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="User Experience Gallery Design UH Manoa ArtMania">
+                    <span data-src="img/visual_design/thumbs/thumb_fresh_approach_trifold_small.png"></span>
+                    <span data-src="img/visual_design/thumbs/thumb_fresh_approach_trifold_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/visual_design/thumbs/thumb_fresh_approach_trifold_large.png" alt="Fundraising Tri-Fold Produced for Fresh Approach"></noscript>
+                </span>
+             </a>
             </div>
           </div>
+        </div>
+        <div class="row">
+        	<div class="col-sm-6">
+            <a title="&quot;New Years ReSolutions Booklet&quot; &bull; Art Direction, Copy, Research, Illustration, Adobe Illustrator, Adobe InDesign" href="img/visual_design/full/full_inner_sunset.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="New Years ReSolutions Booklet">
+                    <span data-src="img/visual_design/thumbs/thumb_inner_sunset_small.png"></span>
+                    <span data-src="img/visual_design/thumbs/thumb_inner_sunset_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/visual_design/thumbs/thumb_inner_sunset_large.png" alt="New Years Resolutions Booklet"></noscript>
+                </span>
+             </a>
+            </div>
+            <div class="col-sm-6">
+            	<a title="&quot;No Ka Oi Screenprint - Hawaiian Translation - The Best, or Unsurpassed&quot; &bull; Art Direction, Illustration, Adobe Illustrator, Adobe Photoshop" href="img/visual_design/full/full_no_ka_oi.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="No Ka Oi Tshirt">
+                    <span data-src="img/visual_design/thumbs/thumb_no_ka_oi_small.png"></span>
+                    <span data-src="img/visual_design/thumbs/thumb_no_ka_oi_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/visual_design/thumbs/thumb_no_ka_oi_large.png" alt="New No Ka Oi Tshirt"></noscript>
+                </span>
+             </a>
+           </div>
+        </div>
+        <div class="row margin-btm-lrg">
+        	<div class="col-sm-6">
+            <a title="&quot;Vacaville Zoo Coloring Contest Poster and Coloring Sheet&quot; &bull; Art Direction, Illustration, Graphic Design, Adobe Illustrator" href="img/visual_design/full/full_vacaville_zoo_coloring.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Vacaville Zoo Coloring">
+                    <span data-src="img/visual_design/thumbs/thumb_vacaville_zoo_coloring_small.png"></span>
+                    <span data-src="img/visual_design/thumbs/thumb_vacaville_zoo_coloring_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/visual_design/thumbs/thumb_vacaville_zoo_coloring_large.png" alt="Vacaville Zoo Coloring"></noscript>
+                </span>
+             </a>
+            </div>
+            <div class="col-sm-6">
+            	<a title="&quot;Von Tease&quot; &bull; Art Direction, Illustration, Adobe Illustrator" href="img/visual_design/full/full_von_tease.png" rel="example1">
+                <span data-class="img-circle img-border"  data-picture data-alt="Von Tease">
+                    <span data-src="img/visual_design/thumbs/thumb_von_tease_small.png"></span>
+                    <span data-src="img/visual_design/thumbs/thumb_von_tease_large.png" data-media="(min-width: 600px)"></span>
+        
+                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-circle img-border" src="img/visual_design/thumbs/thumb_von_tease_large.png" alt="Von Tease"></noscript>
+                </span>
+             </a>
+           </div>
         </div>
       </div>
     </div>
@@ -307,26 +448,39 @@
     <!-- /Portfolio -->
 
     <!-- Call to Action -->
-    <div class="call-to-action" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h3>So what are you waiting for? Get in touch</h3>
+    
+    <div class="bgUnderCover-contactBG" id="contact">
+        <div id="top" class="contactBG">
+          <div class="vert-text">
+            <div class="grey-transparent">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3 text-center">
+                    <h3 class="graphicText">What are you waiting for?</h3> 
+                    <h2 class="graphicText">Let's connect, collaberate and communicate</h2>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 col-sm-offset-2 text-center">
+                        <a href="http://linkedin.com/in/jpostdesign" class="btn btn-lg btn-primary"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                   </div>
+                   <div class="col-sm-2 col-sm-offset-1 text-center">
+                        <a href="http://github.com/jpostdesign" class="btn btn-lg btn-default"><i class="fa fa-github-alt"></i> GitHub</a>
+                   </div>
+                   <div class="col-sm-2 col-sm-offset-1 text-center">
+                        <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x70;&#x6f;&#x73;&#116;&#x6d;&#97;&#x6e;&#64;&#106;&#112;&#x6f;&#x73;&#x74;&#x2d;&#x64;&#101;&#x73;&#105;&#103;&#x6e;&#x2e;&#x63;&#x6f;&#109;" target="_top" class="btn btn-lg btn-primary"><i class="fa fa-envelope"></i> Email</a>
+                        <p class="graphicText">Just let me know you're following up from my site... And not a spam-bot </p>
+                   </div>
+      </div>
+      </div>
+            </div>
+                
           </div>
         </div>
-        <div class="row">
-        	<div class="col-sm-2 col-sm-offset-2 text-center">
-            	<a href="http://linkedin.com/in/jpostdesign" class="btn btn-lg btn-primary"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-           </div>
-           <div class="col-sm-2 col-sm-offset-1 text-center">
-            	<a href="http://github.com/jpostdesign" class="btn btn-lg btn-default"><i class="fa fa-github-alt"></i> GitHub</a>
-           </div>
-           <div class="col-sm-2 col-sm-offset-1 text-center">
-            	<a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x70;&#x6f;&#x73;&#116;&#x6d;&#97;&#x6e;&#64;&#106;&#112;&#x6f;&#x73;&#x74;&#x2d;&#x64;&#101;&#x73;&#105;&#103;&#x6e;&#x2e;&#x63;&#x6f;&#109;" target="_top" class="btn btn-lg btn-primary"><i class="fa fa-envelope"></i> Email</a>
-           </div>
-      </div>
-      </div>
-    </div>
+        </div>
+    
+    
+      
     <!-- End Call to Action -->
     <!-- Resume -->
     <article>
@@ -573,20 +727,46 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
     </article>
     <!-- end Resume -->
     <!-- Footer -->
+    
+    
+    
+    <div class="bgUnderCover-footerBG" id="contact">
+        <div id="top" class="footerBG">
+          <div class="vert-text">
+            <div class="grey-transparent">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3 text-center">
+                    <h3 class="graphicText">Be well, do good work, and keep in touch.</h3>
+                    <h4 class="graphicText"> - Garrison Keillor</h4>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 col-sm-offset-2 text-center">
+                        <a href="http://linkedin.com/in/jpostdesign" class="btn btn-lg btn-primary"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                   </div>
+                   <div class="col-sm-2 col-sm-offset-1 text-center">
+                        <a href="http://github.com/jpostdesign" class="btn btn-lg btn-default"><i class="fa fa-github-alt"></i> GitHub</a>
+                   </div>
+                   <div class="col-sm-2 col-sm-offset-1 text-center">
+                        <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x70;&#x6f;&#x73;&#116;&#x6d;&#97;&#x6e;&#64;&#106;&#112;&#x6f;&#x73;&#x74;&#x2d;&#x64;&#101;&#x73;&#105;&#103;&#x6e;&#x2e;&#x63;&#x6f;&#109;" target="_top" class="btn btn-lg btn-primary"><i class="fa fa-envelope"></i> Email</a>
+                   </div>
+      </div>
+      		<div class="row">
+                  <div class="col-md-6 col-md-offset-3 text-center">
+                    <h4 class="graphicText">Hope you enjoyed my site, and look forward to hearing from you soon. - Jason</h4>
+                  </div>
+                </div>
+      </div>
+            </div>
+                
+          </div>
+        </div>
+        </div>
+    
     <footer>
     <div class="footer">
       <div class="container">
-        <div class="row">
-        <div class="col-sm-2 col-sm-offset-2 text-center">
-              <a href="http://linkedin.com/in/jpostdesign" class="btn btn-lg btn-primary"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
-        </div>
-        <div class="col-sm-2 col-sm-offset-1 text-center">
-            <a href="http://github.com/jpostdesign" class="btn btn-lg btn-default"><i class="fa fa-github-alt"></i> GitHub</a>
-        </div>
-        <div class="col-sm-2 col-sm-offset-1 text-center">
-            <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x70;&#x6f;&#x73;&#116;&#x6d;&#97;&#x6e;&#64;&#106;&#112;&#x6f;&#x73;&#x74;&#x2d;&#x64;&#101;&#x73;&#105;&#103;&#x6e;&#x2e;&#x63;&#x6f;&#109;" target="_top" class="btn btn-lg btn-primary"><i class="fa fa-envelope"></i> Email</a>
-        </div>
-        </div>
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center">
             <div>
@@ -606,6 +786,10 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
     <!-- Placed at the end of the document so the pages load faster -->
     
     <!-- JavaScript -->
+    <script src="js/matchmedia.js"></script>
+    <script src="js/picturefill.js"></script>
+    
+    
     <!-- Change to CDN -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.js"></script>

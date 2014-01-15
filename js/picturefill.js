@@ -33,11 +33,10 @@
 					picImg = w.document.createElement( "img" );
 					picImg.alt = ps[ i ].getAttribute( "data-alt" );
 					picImg.title = ps[ i ].getAttribute( "data-title" );
-				}
-
-				picImg.src =  matchedEl.getAttribute( "data-src" );
+					
+					}
 				picImg.className = ps[ i ].getAttribute( "data-class" ) + " " + matchedEl.getAttribute( "class" );
-				picImg.id = ps[ i ].getAttribute( "data-id" )
+				picImg.src =  matchedEl.getAttribute( "data-src" );
 				matchedEl.appendChild( picImg );
 			}
 			else if( picImg ){

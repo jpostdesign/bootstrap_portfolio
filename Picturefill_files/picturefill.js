@@ -33,9 +33,9 @@
 					picImg = w.document.createElement( "img" );
 					picImg.alt = ps[ i ].getAttribute( "data-alt" );
 					picImg.title = ps[ i ].getAttribute( "data-title" );
-					picImg.className = ps[ i ].getAttribute( "data-class" ) + " " + matchedEl.getAttribute( "class" );
-				}
-
+					
+					}
+				picImg.className = ps[ i ].getAttribute( "data-class" ) + " " + matchedEl.getAttribute( "class" );
 				picImg.src =  matchedEl.getAttribute( "data-src" );
 				matchedEl.appendChild( picImg );
 			}

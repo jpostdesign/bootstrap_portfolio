@@ -1,0 +1,67 @@
+body {
+	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
+}
+
+.portfolio-item {
+	margin-bottom: 25px;
+}
+
+footer {
+	margin: 50px 0;
+}
+
+/*New rules below */
+body {
+	letter-spacing:0.03rem;
+}
+.chatIcons {
+	padding: 10px 10px 100px 10px;
+}
+.floatLeft {
+	float:left;
+}
+.floatRight {
+	float:right;
+}
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+	position:absolute;
+}
+textarea {
+	width: 100%; 
+	padding: 2px; 
+	margin-bottom: 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+
+div#chatWindowDiv {
+	background-color: #555555;
+	margin: 0px 15px;
+	padding: 5px;
+	height: 360px;
+	overflow: auto;
+	color: #3C3C3E;
+}
+p.chatWindow.agent {
+	margin: 10px;
+	padding: 10px;
+	-webkit-border: 12px 0px 18px 6px;
+	border-radius: 12px 0px 18px 6px;
+	background-color: #A8A8A8;
+	color: #FAFAFA;
+}
+p.chatWindow.customer {
+	margin: 10px;
+	padding: 10px;
+	-webkit-border: 0px 12px 6px 18px;
+	border-radius: 0px 12px 6px 18px;
+	background-color: #FAFAFA;
+}
+.messageDiv {
+	background-color:#3C3C3E;
+	margin: 0px 15px;
+	padding: 5px 15px;
+	height:auto;
+}
