@@ -1,0 +1,797 @@
+/* Global Styles */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+  margin-right: -250px;
+  right: 0;
+  width: 250px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+  position: relative;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  line-height: 32px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#menu-toggle {
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+
+/* Intro */
+
+.intro {
+  padding: 3.4rem 0;
+}
+
+/* Services */
+
+.services {
+  background: #7fbbda;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.service-item {
+  margin-bottom: 15px;
+}
+
+i.service-icon {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+/* Callout */
+
+.callout {
+  color: #ffffff;
+  display: table;
+  height: 400px;
+  width: 100%;
+  background: url(../img/callout.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 50px 0;
+}
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+/* Call to Action */
+
+.call-to-action {
+  color: #ffffff;
+  background: #0a5175;
+  padding: 3.4rem 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+/* Footer */
+
+.footer {
+  padding: 1.4rem 0;
+  background: #0a5175;
+  color: rgba(255,255,255,1);
+  letter-spacing:0.1rem;
+}
+
+.top-scroll {
+  margin-top: 50px;
+}
+
+.top-scroll a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i.scroll {
+  color: #333333;
+}
+
+i.scroll:hover {
+  color: #0a5175;
+}
+
+/* customized css
+/////////////////
+///////////////// */
+body {
+	background-color: #FAFAFA;
+}
+code {
+	color: #6F6A78;
+	background-color: #E1E2E6;
+}
+#sidebar-wrapper i:hover,
+#sidebar-wrapper i:focus,
+#sidebar-wrapper i:active
+ {
+	color:#E6E6E6;
+}
+.bgOrange {
+	background-color: #BC8C38;
+	color: #fafafa;
+	letter-spacing: 0.2rem;
+}
+.btn {
+    margin:0.5rem;
+}
+
+.clearfloat {
+    clear:both;
+}
+.educationDegree,
+.experienceTitle {
+	font-weight:bold;
+	letter-spacing:0.1rem;
+}
+
+.fa-linkedin-blue {
+    color:#0e76a8 ;
+}
+
+.fa-nav {
+    font-size:2.4rem;
+    color:#555555;
+    padding:0.5rem;
+    margin-left:1.05rem;
+    margin-right:1.05rem;
+}
+.float-left {
+    float:left;
+}
+.float-right {
+    float:right;
+}
+.grey-transparent {
+	background-color: rgba(20,30,50,0.3);
+	padding: 1.4rem;
+	display:inline-block;
+	width:auto;
+}
+
+.graphicText {
+	color: rgba(255,255,255,1);
+	text-shadow: 0px -2px 1px rgba(0,0,0,0.4),
+    2px 2px 5px rgba(0,0,0,0.8);
+	letter-spacing:0.2rem;
+}
+/* 
+.header h1   , .header h2, .header h3 , .header p{
+	color: rgba(255,255,255,1);
+	text-shadow: 1px 2px 5px #333;
+	letter-spacing:0.1rem;
+}
+*/
+
+.hr-grey hr { 
+    border-top-color:#aaa;
+}
+
+i.service-icon {
+  border: 0.8rem solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 6rem;
+  width: 14rem;
+  height: 14rem;
+  line-height: 13rem;
+  vertical-align: middle; 
+  text-align: center;
+}
+.img-border {
+	border:0.8rem solid #428bca;
+	margin-bottom: 2.4rem;
+}
+.img-border:hover,
+.img-border:focus,
+.img-border:active
+ {
+	border-color: #2a6496;
+}
+.inline-ul > li {
+    float:left;
+    margin-right:2.8rem;
+}
+
+.margin-center {
+	margin:auto;
+}
+
+.margin-btm-lrg {
+    margin-bottom:4.8rem;
+}
+.margin-btm-med {
+	margin-bottom: 1.6rem;
+}
+.margin-btm-xlrg {
+    margin-bottom:9.6rem;
+}
+
+.nav-caption {
+    color:#555555;
+    padding: 0rem 1.4rem;
+}
+.picturefillDivBG {
+    overflow:hidden;
+    width:100%;
+    height: 100%;
+    position:absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.picturefillDivBG img, .picturefillDiv img {
+    max-width: 100%;
+}
+.img-center {
+	margin:auto;
+	vertical-align: top;
+	margin-bottom:1.6rem;
+}
+.vert-text {
+    position:relative;
+}
+.videoResponsive {
+   width:100%; 
+   max-width:960px; 
+   height:auto; 
+}
+
+/* ///////
+Map
+////// */
+/*
+/// Google Map Styles
+*/
+#google-map img {
+	max-width: none !important;
+}
+.gmapInfoWindow, .gmapInfoWindowAPIv3 {
+	color:#333;
+	font-size:95%;
+	line-height:120%;
+}
+
+.gmapInfoWindow.marketName {
+	font-size: 140%;
+	padding-bottom: 0.1em;
+	margin-bottom: 0.1em;
+	}
+.gmapInfoWindowAPIv3.marketNameAPIv3 {
+	font-size: 140%;
+	padding-bottom: 0.1em;
+	margin-bottom: 0.1em;
+	/* padding:0;
+	margin:0; */
+	}
+.gmapInfoWindowAPIv3Container {
+	/* 
+	container resizing fixed by adding maxWidth to the "var.popup = google.maps.InfoWindow" javascript property. It forces the DOM to size based on content
+	padding:0;
+	margin:0; */
+}
+dl.gmapInfoWindow  {
+	margin-bottom: 0em;
+	padding-bottom: 0em;
+	}
+
+dl.gmapInfoWindowAPIv3  {
+	margin-bottom: 0em;
+	padding-bottom: 0em;
+}
+dt.gmapInfoWindow  {
+	font-weight: bold;
+	}
+dt.gmapInfoWindowAPIv3  {
+	/* padding:0;
+	margin:0; */
+	font-weight: bold;
+	}
+dd.gmapInfoWindow  {
+	margin-left: 0.5em;
+	margin-bottom: 0em;
+	padding-bottom: 0.1em;
+	}
+dd.gmapInfoWindowAPIv3  {
+	margin-left: 0.5em;
+	margin-bottom: 0em;
+	padding-bottom: 0.1em;
+	}
+p.gmapInfoWindow {
+	margin: 0em;
+	padding: 0em;
+	}
+p.gmapInfoWindowAPIv3 {
+	margin: 0em;
+	padding: 0em;
+	}
+p.facebookLink {
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	margin-top: 0.1em;
+	padding-top: 0.1em;
+	}
+p.facebookLinkAPIv3 {
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	margin-top: 0.1em;
+	padding-top: 0.1em;
+	}
+a:link.gmapInfoWindow  {
+	color: #06C;
+	}
+a:visited.gmapInfoWindow  {
+	color: #06C;
+ 	}
+a:link.gmapInfoWindowAPIv3  {
+	color: #06C;
+	}
+a:visited.gmapInfoWindowAPIv3  {
+	color: #06C;
+ 	}
+a:link.gmapInfoWindow.closedMarket  {
+	color: #630;
+	}
+a:visited.gmapInfoWindow.closedMarket  {
+	color: #630;
+ 	}
+a:link.gmapInfoWindowAPIv3.closedMarket  {
+	color: #630;
+	}
+a:visited.gmapInfoWindowAPIv3.closedMarket  {
+	color: #630;
+}
+ 	
+a:link.marketLink  {
+	color: #005329;
+	}
+a:visited.marketLink  {
+	color: #005329;
+ 	}
+a:link.zipListNames  {
+	color: #06C;
+	}
+a:visited.zipListNames  {
+	color: #06C;
+ 	}
+.gmapInfoWindow.closedSeason {
+	font-weight: bold;
+}
+.gmapInfoWindowAPIv3.closedSeason {
+	font-weight: bold;
+}
+.gmapFooter {
+	font-weight: normal;
+	}
+.gmapTitle {
+	font-weight: bold;
+	font-size: 1.5em;
+	}
+.gmapOpenText {
+	font-weight: bold;
+	color: #005329;
+	}
+.gmapClosedText {
+	font-weight: bold;
+	color: #630;
+	}
+#google-map {
+	width:90%; 
+	margin:5%; 
+	height: 300px;
+}
+
+
+
+/* Full Page Image Header Area */
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_bay_bridge_small.jpg) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+	
+.header {
+	background: url(../img/background/bg_sf_bay_bridge_small.png) no-repeat center center scroll; 
+  }
+  
+  */
+
+  .callout {
+	background: url(../img/callout.jpg) no-repeat center center scroll; 
+  }
+
+}
+
+/* ////////////
+backgrounds setup to change 
+////////////*/
+
+.bgUnderCover-topBG {
+	display: table;
+ 	height: 100%;
+  	width: 100%;
+  	position: relative;
+	background: url(../img/background/bg_sf_bay_bridge_small.png) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.topBG {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_bay_bridge_small.png) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+@media screen and (min-width: 569px) {
+    .topBG {
+        background-image: url(../img/background/bg_sf_bay_bridge_med.png);
+}
+}
+
+@media screen and (min-width: 1100px) {
+	/* change from scroll to fixed for "real" computers. Fixed attribute does not work on iOS */
+	.topBG {
+	display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_bay_bridge_large.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+
+/* ////////////
+backgrounds setup to change 
+////////////*/
+
+.bgUnderCover-freebieBG {
+	display: table;
+ 	height: 100%;
+  	width: 100%;
+  	position: relative;
+	background: url(../img/background/bg_sf_nob_hill_small.png) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.freebieBG {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_nob_hill_small.png) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+@media screen and (min-width: 569px) {
+    .freebieBG {
+        background-image: url(../img/background/bg_sf_nob_hill_med.png);
+}
+}
+
+@media screen and (min-width: 1100px) {
+	/* change from scroll to fixed for "real" computers. Fixed attribute does not work on iOS */
+	.freebieBG {
+	display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_nob_hill_large.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+
+/* ////////////
+backgrounds setup to change 
+////////////*/
+
+.bgUnderCover-contactBG {
+	display: table;
+ 	height: 100%;
+  	width: 100%;
+  	position: relative;
+	background: url(../img/background/bg_sf_palace_fine_arts_small.png) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contactBG {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_palace_fine_arts_small.png) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+@media screen and (min-width: 569px) {
+    .contactBG {
+        background-image: url(../img/background/bg_sf_palace_fine_arts_med.png);
+}
+}
+
+@media screen and (min-width: 1100px) {
+	/* change from scroll to fixed for "real" computers. Fixed attribute does not work on iOS */
+	.contactBG {
+	display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_palace_fine_arts_large.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+
+/* ////////////
+backgrounds setup to change 
+////////////*/
+
+.bgUnderCover-footerBG {
+	display: table;
+ 	height: 100%;
+  	width: 100%;
+  	position: relative;
+	background: url(../img/background/bg_sf_transamerica_small.png) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.footerBG {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_transamerica_small.png) no-repeat center center scroll; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+@media screen and (min-width: 569px) {
+    .footerBG {
+        background-image: url(../img/background/bg_sf_transamerica_med.png);
+}
+}
+
+@media screen and (min-width: 1100px) {
+	/* change from scroll to fixed for "real" computers. Fixed attribute does not work on iOS */
+	.footerBG {
+	display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/background/bg_sf_transamerica_large.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between themes.
+    Avoid changing this area to maintain compatability with future versions of ColorBox.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative; overflow:hidden;}
+#cboxLoadedContent{overflow:auto;}
+#cboxLoadedContent iframe{display:block; width:100%; height:100%; border:0;}
+#cboxTitle{
+	margin:0;
+}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+
+/* 
+    Example user style
+    The following rules are ordered and tabbed in a way that represents the
+    order/nesting of the generated HTML, so that the structure easier to understand.
+*/
+#cboxOverlay{
+	background-image: url(../images/overlay.png);
+	background-repeat: repeat;
+	background-position: 0 0;
+}
+#colorbox{}
+    #cboxTopLeft{width:21px; height:21px; background:url(../images/controls.png) -100px 0 no-repeat;}
+    #cboxTopRight{width:21px; height:21px; background:url(../images/controls.png) -129px 0 no-repeat;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(../images/controls.png) -100px -29px no-repeat;}
+    #cboxBottomRight{width:21px; height:21px; background:url(../images/controls.png) -129px -29px no-repeat;}
+    #cboxMiddleLeft{width:21px; background:url(../images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(../images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(../images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(../images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff;}
+	 .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:4em;}
+        #cboxTitle{position:absolute; padding:0% 5% 0% 5%; bottom:35px; left:0; text-align:center; margin-left:auto; margin-right:auto; width:100%; color:#666; border: 0.4rem solid rgba(100,100,100,.25); background: rgba(255,255,255,.9);}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#666;}
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0px; background:url(../images/controls.png) -75px 0px no-repeat; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious.hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(../images/controls.png) -50px 0px no-repeat; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext.hover{background-position:-50px -25px;}
+        #cboxLoadingOverlay{background:url(../images/loading_background.png) center center no-repeat;}
+        #cboxLoadingGraphic{background:url(../images/loading.gif) center center no-repeat;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(../images/controls.png) -25px 0px no-repeat; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose.hover{background-position:-25px -25px;}
+
+/*
+    The following fixes png-transparency for IE6.  
+    It is also necessary for png-transparency in IE7 & IE8 to avoid 'black halos' with the fade transition
+    
+    Since this method does not support CSS background-positioning, it is incompatible with CSS sprites.
+    Colorbox preloads navigation hover classes to account for this.
+    
+    !! Important Note: AlphaImageLoader src paths are relative to the HTML document,
+    while regular CSS background images are relative to the CSS document.
+*/
+.cboxIE #cboxTopLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderTopLeft.png, sizingMethod='scale');}
+.cboxIE #cboxTopCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderTopCenter.png, sizingMethod='scale');}
+.cboxIE #cboxTopRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderTopRight.png, sizingMethod='scale');}
+.cboxIE #cboxBottomLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderBottomLeft.png, sizingMethod='scale');}
+.cboxIE #cboxBottomCenter{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderBottomCenter.png, sizingMethod='scale');}
+.cboxIE #cboxBottomRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderBottomRight.png, sizingMethod='scale');}
+.cboxIE #cboxMiddleLeft{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderMiddleLeft.png, sizingMethod='scale');}
+.cboxIE #cboxMiddleRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderMiddleRight.png, sizingMethod='scale');}
+
+
+
+
+
