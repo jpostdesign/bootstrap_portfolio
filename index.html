@@ -20,7 +20,9 @@
 <!-- google maps -->
 <script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false" type="text/javascript"></script>
 <script src="scripts/gmap_script.js" type="text/javascript"></script>
-
+ <!-- Bootstrap CDN recommended from their site: -->
+            <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>  
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
   </head>
 
   <body onLoad="initialize()">
@@ -32,9 +34,9 @@
       <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand"><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#resume">Resume</a></li>
       </ul>
       <img src="img/background/bg_sf_palace_fine_arts_navbar.png" alt=""/>
     <p class="nav-caption">Site created mobile-first with Twitter Bootstrap & Git.</p>
@@ -124,12 +126,12 @@
              
         <p class="clearfloat">I also have years of experience as a multimedia visual designer, and social media manager. With the convergence of all media, having a solid background in all-around design principles is a must for every web design/developer.</p>
         <p>I'm particularly interested in implementing UI / UX best practices that are pixel perfect, mobile-first, embrace progressive enhancement, and most importantly deliver results.</p>
-        <p>I'm passionate about mobile and responsive web design, and love learning and sharing knowledge with my peers. I'm a regular blogger and commenter of LinkedIn's two most active groups on responsive web design. 
+        <p>I'm passionate about mobile and responsive web design, and love learning and sharing knowledge with my peers. I'm a regular blogger and commenter of LinkedIn's two most active groups on responsive web design. </p>
               <ul>
                 <li><a href="http://www.linkedin.com/groups?gid=4187126">Mobile First Responsive Web Design <i class="fa fa-linkedin-square fa-linkedin-blue"></i></a></li>
                 <li><a href="http://www.linkedin.com/groups?gid=4215540">Responsive Web Design – Real World Applications <i class="fa fa-linkedin-square fa-linkedin-blue"></i></a> - additionally rated as a "Top Contributor"</li>
               </ul>
-        </p>
+        
         
         <h2>Notable Accomplishments:</h2>
             <ul>
@@ -147,7 +149,7 @@
     <!-- /Inrro -->
   
     <!-- Services -->
-    <section id="services" class="services">
+    <section id="portfolio" class="services">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-md-offset-4 text-center">
@@ -212,7 +214,7 @@
  
     
     	<div class="bgUnderCover-freebieBG">
-        <div id="top" class="freebieBG">
+        <div class="freebieBG">
           <div class="vert-text">
             <div class="grey-transparent">
             <h2 class="graphicText">Hi there! Nice to see you didn't skip ahead :)</h2>
@@ -230,7 +232,7 @@
 
     <!-- Portfolio -->
     <article>
-    <section id="portfolio" class="portfolio">
+    <section class="portfolio">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-md-offset-4 text-center">
@@ -383,7 +385,7 @@
                     <span data-src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_large.png" data-media="(min-width: 600px)"></span>
         
                      <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
-                    <noscript><img class="img-border img-circle" class="img-border img-circle" src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_large.png" alt="Google Analytics Mobile Redirect Improvement"></noscript>
+                    <noscript><img class="img-border img-circle"  src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_large.png" alt="Google Analytics Mobile Redirect Improvement"></noscript>
                 </span>
              </a>
            </div>
@@ -479,7 +481,6 @@
            </div>
         </div>
       </div>
-    </div>
     </section>
     </article>
     <!-- /Portfolio -->
@@ -487,7 +488,7 @@
     <!-- Call to Action -->
     
     <div class="bgUnderCover-contactBG" id="contact">
-        <div id="top" class="contactBG">
+        <div class="contactBG">
           <div class="vert-text">
             <div class="grey-transparent">
             <div class="container">
@@ -648,20 +649,22 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
               		<h4 class="clearfloat experienceEmployer">Pacific Coast Farmers' Market Association - Concord, CA</h4>
                     	<p>The Pacific Coast Farmers Market Association (PCFMA) is the largest farmers' market association in the U.S., operating over 70 markets spanning from Santa Teresa in the South Bay up to Vacaville in the North Bay.</p>
                         <ul>
-                              <li> Web development of a dynamic PHP/MySQL website with 1,000-plus pages. (Not involved with the 90's style table layout.)</li>
-                              <ul>
-                                <li>Correcting over 2,700 HTML warnings and errors</li>
-                                <li>Boosting mobile redirect from 26% to 100%, based on Google Analytics traffic funnels</li>
-                                <li>Creating a dynamic, interactive map of 70 farmers' markets utilizing PHP, MySQL, Google Maps API, including custom icon design</li>
-                                <li>Prototyping an entire redesign of the PCFMA site to be responsive-ready</li>
-                              </ul>
-                              <li>Social media management and content creation across 19 distinctive brands</li>
-                              <ul>
-                                <li>Achieving a 189% average increase of Facebook Likes across 19 unique brand pages in a single year</li>
-                                <li>Record-setting 833% organic increase (no ads) from 54 to 504 Facebook Page Likes on a single page</li>
-                                <li>Record-setting viral post with 153 Shares, on a Page with only 598 Likes, reaching 16,248 unique users</li>
-                                <li>Developing social media guidelines and policy</li>
-                              </ul>
+                              <li> Web development of a dynamic PHP/MySQL website with 1,000-plus pages. (Not involved with the 90's style table layout.)
+                                  <ul>
+                                        <li>Correcting over 2,700 HTML warnings and errors</li>
+                                        <li>Boosting mobile redirect from 26% to 100%, based on Google Analytics traffic funnels</li>
+                                        <li>Creating a dynamic, interactive map of 70 farmers' markets utilizing PHP, MySQL, Google Maps API, including custom icon design</li>
+                                        <li>Prototyping an entire redesign of the PCFMA site to be responsive-ready</li>
+                                     </ul>
+                          	</li>
+                              <li>Social media management and content creation across 19 distinctive brands
+                                  <ul>
+                                    <li>Achieving a 189% average increase of Facebook Likes across 19 unique brand pages in a single year</li>
+                                    <li>Record-setting 833% organic increase (no ads) from 54 to 504 Facebook Page Likes on a single page</li>
+                                    <li>Record-setting viral post with 153 Shares, on a Page with only 598 Likes, reaching 16,248 unique users</li>
+                                    <li>Developing social media guidelines and policy</li>
+                                  </ul>
+                              </li>
                               <li class="margin-btm-lrg">Graphic design in print and digital formats for 70-plus unique markets
                               <ul>
                                 <li>Developing brands' visual guidelines</li>
@@ -763,7 +766,6 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
           </div>
         </div>
       </div>
-    </div>
         </section>
     </article>
     <!-- end Resume -->
@@ -771,8 +773,8 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
     
     
     
-    <div class="bgUnderCover-footerBG" id="contact">
-        <div id="top" class="footerBG">
+    <div class="bgUnderCover-footerBG">
+        <div class="footerBG">
           <div class="vert-text">
             <div class="grey-transparent">
             <div class="container">
@@ -833,12 +835,12 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
     
     
     <!-- Change to CDN -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    
-    <!-- Bootstrap CDN recommended from their site: 
-            <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    -->
+    <!-- <script src="js/jquery-1.10.2.min.js"></script> -->
+    <!-- <script src="js/bootstrap.js"></script> -->
+
+   
+            
+          
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
     <script>
@@ -874,14 +876,13 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
     
     <!-- Colorbox script -->
     
-    <!-- CDN for jquery and colorbox. Change up top too 
+    <!-- CDN for colorbox. -->
     
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script> 
-    
-    http://cdn.jsdelivr.net/colorbox/1.4.4/jquery.colorbox-min.js
-    
-    -->
+
 <script src="scripts/jquery.colorbox.js"></script>
+   <!-- <script src="http://cdn.jsdelivr.net/colorbox/1.4.4/jquery.colorbox-min.js" type="text/javascript"></script>  -->
+    
+
 <script type="text/javascript">
 			$(document).ready(function(){
 				//Examples of how to assign the ColorBox event to elements

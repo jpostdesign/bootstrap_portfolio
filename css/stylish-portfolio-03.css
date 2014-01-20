@@ -290,9 +290,6 @@ i.service-icon {
   vertical-align: middle; 
   text-align: center;
 }
-
-/* borders above 1024 to work around iPhone, iPad displaying improperly */
-@media (min-width: 1100px) {
 .img-border {
 	border:0.8rem solid #428bca;
 	margin-bottom: 2.4rem;
@@ -302,7 +299,6 @@ i.service-icon {
 .img-border:active
  {
 	border-color: #2a6496;
-}
 }
 .inline-ul > li {
     float:left;
@@ -532,19 +528,16 @@ a:visited.zipListNames  {
 backgrounds setup to change 
 ////////////*/
 
-.bgUnderCover-topBG, .topBG, .bgUnderCover-freebieBG, .freebieBG, .bgUnderCover-contactBG, .contactBG, .bgUnderCover-footerBG, .footerBG  {
+.bgUnderCover-topBG {
 	display: table;
  	height: 100%;
   	width: 100%;
   	position: relative;
-	background-color:  #2a6496; 
+	background: url(../img/background/bg_sf_bay_bridge_small.png) no-repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-.bgUnderCover-topBG {
-	background: url(../img/background/bg_sf_bay_bridge_small.png) no-repeat center center scroll;
 }
 .topBG {
   display: table;
