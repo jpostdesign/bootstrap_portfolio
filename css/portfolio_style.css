@@ -364,28 +364,28 @@ Map
 }
 .gmapInfoWindow, .gmapInfoWindowAPIv3 {
 	color:#333;
-	font-size:95%;
-	line-height:120%;
 }
 
 .gmapInfoWindow.marketName {
-	font-size: 140%;
-	padding-bottom: 0.1em;
-	margin-bottom: 0.1em;
+	font-size: 2.0rem;
+	padding-bottom: 0em;
+	margin-bottom: 0em;
 	}
 .gmapInfoWindowAPIv3.marketNameAPIv3 {
-	font-size: 140%;
-	padding-bottom: 0.1em;
-	margin-bottom: 0.1em;
+	font-size: 2.0rem;
+	padding-bottom: 0em;
+	margin-bottom: 0em;
 	/* padding:0;
 	margin:0; */
 	}
 .gmapInfoWindowAPIv3Container {
-	/* 
-	container resizing fixed by adding maxWidth to the "var.popup = google.maps.InfoWindow" javascript property. It forces the DOM to size based on content
-	padding:0;
-	margin:0; */
+	/*container resizing fixed by adding maxWidth to the "var.popup = google.maps.InfoWindow" javascript property. It forces the DOM to size based on content */
+	width:300;
+	height:auto;
+	padding:1rem;
+	margin:0; 
 }
+
 dl.gmapInfoWindow  {
 	margin-bottom: 0em;
 	padding-bottom: 0em;
@@ -406,12 +406,12 @@ dt.gmapInfoWindowAPIv3  {
 dd.gmapInfoWindow  {
 	margin-left: 0.5em;
 	margin-bottom: 0em;
-	padding-bottom: 0.1em;
+	padding-bottom: 0em;
 	}
 dd.gmapInfoWindowAPIv3  {
 	margin-left: 0.5em;
 	margin-bottom: 0em;
-	padding-bottom: 0.1em;
+	padding-bottom: 0em;
 	}
 p.gmapInfoWindow {
 	margin: 0em;
@@ -425,15 +425,15 @@ p.facebookLink {
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
-	margin-top: 0.1em;
-	padding-top: 0.1em;
+	margin-top: 0em;
+	padding-top: 0em;
 	}
 p.facebookLinkAPIv3 {
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
-	margin-top: 0.1em;
-	padding-top: 0.1em;
+	margin-top: 0em;
+	padding-top: 0em;
 	}
 a:link.gmapInfoWindow  {
 	color: #06C;
@@ -483,7 +483,7 @@ a:visited.zipListNames  {
 	}
 .gmapTitle {
 	font-weight: bold;
-	font-size: 1.5em;
+	font-size: 1.6rem;
 	}
 .gmapOpenText {
 	font-weight: bold;
@@ -496,7 +496,8 @@ a:visited.zipListNames  {
 #google-map {
 	width:90%; 
 	margin:5%; 
-	height: 300px;
+	height: 500px;
+	max-height: 90%;
 }
 
 

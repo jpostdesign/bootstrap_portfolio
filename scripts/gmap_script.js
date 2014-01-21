@@ -36,7 +36,7 @@
 		 
 	var popup = new google.maps.InfoWindow({
 		 content: html,
-		 maxWidth: 150
+		 maxWidth: 250
 	 });
 	
 	google.maps.event.addListener(marker, "click", function() {
@@ -62,7 +62,7 @@
 		 });
 	var popup = new google.maps.InfoWindow({
 		 content: html,
-		 maxWidth: 150
+		 maxWidth: 250
 	 });
 	google.maps.event.addListener(marker, "click", function() {
 		 if (currentPopup != null) {
@@ -87,7 +87,7 @@
 		 });
 	 var popup = new google.maps.InfoWindow({
 		 content: html,
-		 maxWidth: 150
+		 maxWidth: 250
 	 });
 	google.maps.event.addListener(marker, "click", function() {
 		 if (currentPopup != null) {
