@@ -1,3 +1,14 @@
+/* color guide ////
+////////
+blue light 	rbga(70,114,176,1)
+blue med 		rgba(16,76,160,1)
+blue dark 		rgba(40,16,93,1)
+
+orange med		rgba(188,140,56,1)
+orange dark	rgba(137,102,41,1)		
+////////
+*/
+
 /* Global Styles */
 
 html,
@@ -181,7 +192,7 @@ i.service-icon {
 
 .footer {
   padding: 1.4rem 0;
-  background: #0a5175;
+  background: rgba(70,114,176,1);
   color: rgba(255,255,255,1);
   letter-spacing:0.1rem;
 }
