@@ -3,7 +3,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 552.2 198.4" style="enable-background:new 0 0 552.2 198.4;" xml:space="preserve">
-	 
+	 	<defs>
 	 		<filter id="dropshadow" height="130%">
               <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> 
               <feOffset dx="2" dy="2" result="offsetblur"/> 
@@ -12,7 +12,7 @@
                 <feMergeNode in="SourceGraphic"/> 
               </feMerge>
             </filter>
-	 
+	 	</defs>
 <g id="Layer_1" style="display:none;">
 </g>
 <g id="Layer_2" style="display:none;">
