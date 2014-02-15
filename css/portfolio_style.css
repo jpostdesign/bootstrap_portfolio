@@ -319,11 +319,15 @@ i.service-icon {
     float:left;
     margin-right:2.8rem;
 }
-
-.margin-center {
-	margin:auto;
+.margin-all-med {
+	margin: 1.6rem;
 }
-
+.margin-all-lrg {
+	margin: 4.8rem;
+}
+.margin-all-xlrg {
+	margin: 9.6rem;
+}
 .margin-btm-lrg {
     margin-bottom:4.8rem;
 }
@@ -333,7 +337,18 @@ i.service-icon {
 .margin-btm-xlrg {
     margin-bottom:9.6rem;
 }
-
+.margin-center {
+	margin:auto;
+}
+.margin-right-med {
+	margin-right: 1.6rem;
+}
+.margin-right-lrg {
+	margin-right: 4.8rem;
+}
+.margin-right-xlrg {
+	margin-right: 9.6rem;
+}
 .maxWidth50 {
 	max-width:50%;
 }
