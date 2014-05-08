@@ -394,107 +394,69 @@ Map
 /*
 /// Google Map Styles
 */
+/* /// gm-style added in v3.14 of maps API in Aug 2013 // */
+.gm-style-iw {
+	height:auto !important;
+	padding-bottom:0.6rem !important;
+}
 #google-map img {
 	max-width: none !important;
+	display:inline-block !important;
 }
 .gmapInfoWindow, .gmapInfoWindowAPIv3 {
-	color:#333;
+	color:#333 !important;
 }
-
-.gmapInfoWindow.marketName {
-	font-size: 2.0rem;
-	padding-bottom: 0em;
-	margin-bottom: 0em;
-	}
 .gmapInfoWindowAPIv3.marketNameAPIv3 {
-	font-size: 2.0rem;
-	padding-bottom: 0em;
-	margin-bottom: 0em;
+	font-size: 2.0rem !important;
+	padding-bottom: 0em !important;
+	margin-bottom: 0em !important;
 	/* padding:0;
 	margin:0; */
 	}
 .gmapInfoWindowAPIv3Container {
 	/*container resizing fixed by adding maxWidth to the "var.popup = google.maps.InfoWindow" javascript property. It forces the DOM to size based on content */
-	width:300;
-	height:auto;
-	padding:1rem;
-	margin:0; 
+	width:300 !important;
+	height:auto !important;
+	padding:1rem !important;
+	margin:0 !important;
 }
-
-dl.gmapInfoWindow  {
-	margin-bottom: 0em;
-	padding-bottom: 0em;
-	}
-
 dl.gmapInfoWindowAPIv3  {
-	margin-bottom: 0em;
-	padding-bottom: 0em;
+	margin-bottom: 0em !important;
+	padding-bottom: 0em !important;
 }
-dt.gmapInfoWindow  {
-	font-weight: bold;
-	}
 dt.gmapInfoWindowAPIv3  {
 	/* padding:0;
 	margin:0; */
-	font-weight: bold;
-	}
-dd.gmapInfoWindow  {
-	margin-left: 0.5em;
-	margin-bottom: 0em;
-	padding-bottom: 0em;
+	font-weight: bold !important;
 	}
 dd.gmapInfoWindowAPIv3  {
-	margin-left: 0.5em;
-	margin-bottom: 0em;
-	padding-bottom: 0em;
-	}
-p.gmapInfoWindow {
-	margin: 0em;
-	padding: 0em;
+	margin-left: 0.5em !important;
+	margin-bottom: 0em !important;
+	padding-bottom: 0em !important;
 	}
 p.gmapInfoWindowAPIv3 {
-	margin: 0em;
-	padding: 0em;
-	}
-p.facebookLink {
-	font-weight: bold;
-	margin: 0;
-	padding: 0;
-	margin-top: 0em;
-	padding-top: 0em;
+	margin: 0em !important;
+	padding: 0em !important;
 	}
 p.facebookLinkAPIv3 {
-	font-weight: bold;
-	margin: 0;
-	padding: 0;
-	margin-top: 0em;
-	padding-top: 0em;
+	font-weight: bold !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	margin-top: 0em !important;
+	padding-top: 0em !important;
 	}
-a:link.gmapInfoWindow  {
-	color: #06C;
-	}
-a:visited.gmapInfoWindow  {
-	color: #06C;
- 	}
 a:link.gmapInfoWindowAPIv3  {
-	color: #06C;
+	color: #06C !important;
 	}
 a:visited.gmapInfoWindowAPIv3  {
-	color: #06C;
- 	}
-a:link.gmapInfoWindow.closedMarket  {
-	color: #630;
-	}
-a:visited.gmapInfoWindow.closedMarket  {
-	color: #630;
+	color: #06C !important;
  	}
 a:link.gmapInfoWindowAPIv3.closedMarket  {
-	color: #630;
+	color: #630 !important;
 	}
 a:visited.gmapInfoWindowAPIv3.closedMarket  {
-	color: #630;
+	color: #630 !important;
 }
- 	
 a:link.marketLink  {
 	color: #005329;
 	}
@@ -507,9 +469,6 @@ a:link.zipListNames  {
 a:visited.zipListNames  {
 	color: #06C;
  	}
-.gmapInfoWindow.closedSeason {
-	font-weight: bold;
-}
 .gmapInfoWindowAPIv3.closedSeason {
 	font-weight: bold;
 }
