@@ -35,7 +35,7 @@
 
 		/* change image x of xx to blank 
 		PREVIOUS - current: "image {current} of {total}", */
-		current: "",
+		current: "Slide {current} of {total}",
 		previous: "previous",
 		next: "next",
 		close: "close",

@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- test git -->
+  	<!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="http://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+      <script src="http://html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Web development and visual design portfolio of Jason Post. Based in the San Francisco Bay Area, delivering all your HTML5, UI, and UX needs.">
@@ -14,7 +19,7 @@
     <link href="css/bootstrap-edited-min.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <link href="css/portfolio_style.css" rel="stylesheet">
+    <link href="css/portfolio_style-no_bg_under.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     
 <!-- google maps -->
@@ -39,7 +44,7 @@
   <body onLoad="initialize()">
 
     <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle">Menu &nbsp;<i class="fa fa-bars"></i></a>
     <nav>
     	<div id="sidebar-wrapper">
       <ul class="sidebar-nav">
@@ -66,10 +71,10 @@
       <div class="vert-text">
         <div class="grey-transparent">
         <h1 class="graphicText">jpost-design</h1>
-        <h2 class="graphicText"><em>From</em> Front End Dev <em>To </em> Visual Design</h2>
+        <h2 class="graphicText">UI / UX <br>
+        Designer &amp; Developer <br>
+        &quot;Unicorn&quot; Portfolio</h2>
         <p class="graphicText">By Jason Post</p>
-        <a href="#about" class="btn btn-default btn-lg">My History</a>
-        <a href="#portfolio" class="btn btn-default btn-lg">Straight To My Work</a>
         </div>
             
       </div>
@@ -88,12 +93,31 @@
             	<img class="maxWidth50" alt="jpost design logo" src="img/jpost_logo/jpost_logo_rectangle_ratio_noText.svg" onerror="this.onerror=null; this.src='img/jpost_logo/jpost_logo_rectangle_ratio_noText.png'" >
            </div>
        </div>
-        <div class="row">
+        <div class="row margin-btm-lrg">
           <div class="col-md-8 col-md-offset-2">
             <h2 class="text-center"><i class="fa fa-comments"></i> Hi, I'm Jason Post. Welcome to my site!</h2>
+            <a class="imgGroup01" title="That's me, Jason Post. Nice suit, right?" href="img/Jason-Post--jpost-design--profile-photo.jpg" rel="example1"><img class="img-circle maxWidth50 float-left margin-right-med img-border" alt="headshot profile of Jason Post" src="img/headshot_square.jpg" /></a>
+            	<p class="lead">I program code and create designs that drive results. A true mix of technical left-brain with creative right-brain. Effectively communicating the technical and creative needs, why's, and how's.</p>
+            </div>
+         </div>
+         <div class="row">
+          <div class="col-md-8 col-md-offset-2">
             <div class="text-center">
-            <p class="lead">I develop sites, design user interfaces, and deliver campaigns that  are iterative, intuitive, and drive results. I have that rare mix of left and right brain, analytical and abstract, technical-minded plus creative-minded. </p>
-            <h3>You could say I'm a unicorn. But personally I prefer the platypus.</h3>
+            	<h3>Suffering pains of bridging engineering and marketing communication?</h3>
+              <h3>I solve that!</h3>
+              <p class="lead">With my dual background, I understand communication challenges and provide solutions. Speaking and scripting fluent front-end (HTML, CSS, JavaScript, jQuery), PLUS fluent art and design skills (layout, color theory, typography, branding, identity).</p>
+             </div>
+           </div>
+         </div>
+         <div class="row margin-btm-lrg">
+          <div class="col-md-8 col-md-offset-2">
+            <p>I'm unique in that I wireframe design patterns, create in Photoshop and Illustrator, code jQuery / JavaScript, write semantic HTML, and run analytics. Inspired by the Bauhaus School of form following function, and De Stijl Movement of reducing to the essentials of form and color, I draw upon a solid art and design foundation to inform my product design decisions. </p>
+          </div>
+        </div>
+         <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="text-center">
+            	<h3>You could say I'm a unicorn. But personally I prefer the platypus.</h3>
             </div>
           </div>
         </div>
@@ -119,12 +143,11 @@
             <h2>Quick Summary:</h2>
             <ul class="inline-ul">
                 <li>UI / UX</li>
+                <li>User-Centered Design </li>
                 <li>SEO</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
+                <li>XHTML / HTML / HTML5</li>
+                <li>CSS / CSS3</li>
                 <li>JavaScript / jQuery</li>
-                <li>PHP</li>
-                <li>MySQL</li>
                 <li>Responsive-Design</li>
                 <li>Prototyping</li>
                 <li>Wireframing</li>
@@ -141,8 +164,7 @@
             <hr>
           </div>
              
-        <p class="clearfloat">I also have years of experience as a multimedia visual designer, and social media manager. With the convergence of all media, having a solid background in all-around design principles is a must for every web design/developer.</p>
-        <p>I'm particularly interested in implementing UI / UX best practices that are pixel perfect, mobile-first, embrace progressive enhancement, and most importantly deliver results.</p>
+        <p class="clearfloat">I'm particularly interested in implementing UI / UX best practices that are pixel perfect, mobile-first, embrace progressive enhancement, and most importantly deliver results.</p>
         <p>I'm passionate about mobile and responsive web design, and love learning and sharing knowledge with my peers. I'm a regular blogger and commenter of LinkedIn's two most active groups on responsive web design. </p>
               <ul>
                 <li><a href="http://www.linkedin.com/groups?gid=4187126">Mobile First Responsive Web Design <i class="fa fa-linkedin-square fa-linkedin-blue"></i></a></li>
@@ -152,11 +174,18 @@
         
         <h2>Notable Accomplishments:</h2>
             <ul>
-                <li><strong>High achiever delivering results.</strong> Academic awards include: Magna Cum  Laude, Associates' of Science Valedictorian, and Bachelors' of Arts Outstanding Electronics Student</li>
-                <li><strong>Creating a dynamic, interactive map</strong> of 70-plus farmers' markets utilizing PHP, MySQL, and JavaScript Google Maps API - Integrating seaonal dates, times, geolocation directions, and social media links</li>
+                <li><strong>High achiever delivering results.</strong>
+                <ul>
+                	<li>Magna Cum  Laude</li>
+                  <li>Associates' of Science Valedictorian</li>
+                  <li>Bachelors' of Arts Outstanding Electronics Student</li>
+                  </ul>
+              </li>
+                <li><strong>Creating a dynamic, interactive map</strong> of 70-plus farmers' market. <a href="#interactive-map">Link to live example.</a> Utilizing PHP, MySQL, and JavaScript Google Maps API - Integrating seaonal dates, times, geolocation directions, and social media links</li>
                 <li><strong>Rocketing mobile redirect</strong> from 26% to 100%, based on Google Analytics traffic funnels</li>
                 <li><strong>Prototyping a responsive redesign</strong> of America's largest farmers' markets association website, containing over 1,000 dynamic PHP pages </li>
                 <li><strong>Record-setting 833% organic increase</strong> (no ads) from 54 to 504 Facebook Page Likes in a single year</li>
+                <li><strong>Increased house/retention list by 22,000 clients</strong> with dynamic vs static processes</li>
             </ul>
           </div>
         </div>
@@ -179,7 +208,7 @@
             <div class="service-item">
               <a href="#webDesign"><i class="service-icon fa fa-laptop"></i></a>
               <h4 class="testThis">Web Development and Design</h4>
-              <p>Need a killer new responsive website? Experienced in Web 2.0 including HTML5, CSS3, JavaScript, jQuery PHP,and MySQL, I got what you need.</p>
+              <p>Need a killer new responsive website? Experienced in Web 2.0 including HTML5, CSS3, JavaScript, and jQuery, I got what you need.</p>
                 <a href="#webDesign" class="btn btn-lg btn-primary margin-btm-lrg">Explore Web</a>
             </div>
           </div>
@@ -238,7 +267,7 @@
           <div class="col-sm-8 col-sm-offset-2 text-center">
             <div class="portfolio-item">
             		<h3 class="margin-btm-lrg">Web Design</h3>
-              <a title="&quot;Interactive Dynamic Map of 65-plus Farmers Markets&quot; &bull; Icons, Google API, PHP, MySQL" href="img/web_design/full/full_google_map_screenshot.png" rel="example1">
+              <a class="imgGroup02" title="&quot;Interactive Dynamic Map of 65-plus Farmers Markets&quot; &bull; Icons, Google API, PHP, MySQL" href="img/web_design/full/full_google_map_screenshot.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Interactive Dynamic Google Map">
                     <span data-src="img/web_design/thumbs/thumb_google_map_screenshot_small.png"></span>
                     <span data-src="img/web_design/thumbs/thumb_google_map_screenshot_large.png" data-media="(min-width: 600px)"></span>
@@ -251,8 +280,8 @@
           </div>
         </div>
         <div class="row">
-        	<div class="col-sm-6">
-            <a title="&quot;Utopia iPad Magazine&quot; &bull; InDesign, Adobe Digital Publishing Suite, After Effects" href="img/web_design/full/full_rubix_utopia_app.png" rel="example1">
+        	<div class="col-sm-6 margin-btm-med">
+            <a class="imgGroup02" title="&quot;Utopia iPad Magazine&quot; &bull; InDesign, Adobe Digital Publishing Suite, After Effects" href="img/web_design/full/full_rubix_utopia_app.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Utopia iPad Magazine App">
                     <span data-src="img/web_design/thumbs/thumb_rubix_utopia_app_small.png"></span>
                     <span data-src="img/web_design/thumbs/thumb_rubix_utopia_app_large.png" data-media="(min-width: 600px)"></span>
@@ -262,8 +291,8 @@
                 </span>
              </a>
             </div>
-            <div class="col-sm-6">
-            	<a title="<a href='simulatedChat--Jason_Post.html' target='_blank'>&quot;Proof of Concept jQuery Chat for Monitise &quot;</a> &bull; Bootstrap, jQuery, Icon Design Link" href="img/web_design/full/full_simulated_chat.png" rel="example1">
+            <div class="col-sm-6 margin-btm-med">
+            	<a class="imgGroup02" title="<a href='simulatedChat--Jason_Post.html' target='_blank'>&quot;Proof of Concept jQuery Chat for Monitise &quot;</a> &bull; Bootstrap, jQuery, Icon Design Link" href="img/web_design/full/full_simulated_chat.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Proof of Concept jQuery Chat for Monetize">
                     <span data-src="img/web_design/thumbs/thumb_simulated_chat_small.png"></span>
                     <span data-src="img/web_design/thumbs/thumb_simulated_chat_large.png" data-media="(min-width: 600px)"></span>
@@ -275,8 +304,8 @@
            </div>
         </div>
         <div class="row margin-btm-lrg">
-        	<div class="col-sm-6">
-            <a title="&quot;PCFMA Responsive Prototype Process&quot; &bull; Site Architecture, Visual Design, Adobe Fireworks, Adobe Edge Inspect, Adobe Edge Reflow, HTML5, CSS3" href="img/web_design/full/full_responsive_design_process.png" rel="example1">
+        	<div class="col-sm-6 margin-btm-med">
+            <a class="imgGroup02" title="&quot;PCFMA Responsive Prototype Process&quot; &bull; Site Architecture, Visual Design, Adobe Fireworks, Adobe Edge Inspect, Adobe Edge Reflow, HTML5, CSS3" href="img/web_design/full/full_responsive_design_process.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Facebook Growth Graph">
                     <span data-src="img/web_design/thumbs/thumb_responsive_design_process_small.png"></span>
                     <span data-src="img/web_design/thumbs/thumb_responsive_design_process_large.png" data-media="(min-width: 600px)"></span>
@@ -286,8 +315,8 @@
                 </span>
              </a>
             </div>
-            <div class="col-sm-6">
-            	<a title="&quot;Adobe Edge Reflow Responsive Design Wireframe &quot; &bull; HTML5, CSS3, Adobe Edge Reflow Link" href="img/web_design/full/full_edge_reflow.png" rel="example1">
+            <div class="col-sm-6 margin-btm-med">
+            	<a class="imgGroup02" title="&quot;Adobe Edge Reflow Responsive Design Wireframe &quot; &bull; HTML5, CSS3, Adobe Edge Reflow Link" href="img/web_design/full/full_edge_reflow.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Adobe Edge Reflow Responsive Design Wireframe">
                     <span data-src="img/web_design/thumbs/thumb_edge_reflow_small.png"></span>
                     <span data-src="img/web_design/thumbs/thumb_edge_reflow_large.png" data-media="(min-width: 600px)"></span>
@@ -303,6 +332,8 @@
             	<div>
                     <h4 id="interactive-map">Live Example: Interactive Google Map</h4>
                             <p> Today's Simuated Date: March 28</p>
+                            <p><img class="img-responsive fa" src="images/gmap_open_icon.png"> - Open Market</p>
+                            <p><img class="img-responsive fa" src="images/gmap_closed_icon.png"> - Closed Market</p>
                             <p id="google-map"></p>
                             <p>
                             Utilizing the Google Maps APIv2, I created an interactive map for PCFMA. This is a different version using APIv3. The PCFMA map implemented PHP and MySQL to create a dynamic array of JavaScript objects containing all the data. This one is hardcoded in JavaScript with an assumed current date in March to show the open and closed season examples.</p>
@@ -332,7 +363,7 @@
         
         
         <div class="row">
-        	<div class="col-sm-6">
+        	<div class="col-sm-6 margin-btm-med">
             <a title="User Experience Gallery Management - UH Manoa Arts Department Scholarship Awards &bull; Crowd Flow, Signage, Gallery Design" href="img/user_experience/full/full_uh_manoa_scholarship_awards_combined_med.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Facebook Growth Graph">
                     <span data-src="img/user_experience/thumbs/thumb_uh_manoa_scholarship_awards_combined_small.png"></span>
@@ -343,7 +374,7 @@
                 </span>
              </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 margin-btm-med">
             	<a title="Facebook Engagement and Fan Growth &bull; Insights, Excel" href="img/user_experience/full/full_facebook_insights_vallejo_line_graph_growth_and_engagement.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Facebook Engagement Graph">
                     <span data-src="img/user_experience/thumbs/thumb_facebook_insights_vallejo_line_graph_growth_and_engagement_small.png"></span>
@@ -359,7 +390,7 @@
         
         
         <div class="row">
-        	<div class="col-sm-6">
+        	<div class="col-sm-6 margin-btm-med">
             <a title="Growth of 19 Unique Facebook Pages &bull; Insights, Google Docs" href="img/user_experience/full/full_facebook_page_likes_and_growth_bar_chart_graph.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Facebook Growth Graph">
                     <span data-src="img/user_experience/thumbs/thumb_facebook_page_likes_and_growth_bar_chart_graph_small.png"></span>
@@ -370,7 +401,7 @@
                 </span>
              </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 margin-btm-med">
             	<a title="Mobile Redirect Improvement from 26% to 100% &bull; Google Analytics" href="img/user_experience/full/full_pcfma_web_mobile_redirect_large.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Google Analytics Mobile Redirect Improvement">
                     <span data-src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_small.png"></span>
@@ -403,7 +434,7 @@
           </div>
         </div>
         <div class="row">
-        	<div class="col-sm-6">
+        	<div class="col-sm-6 margin-btm-med">
             <a title="&quot;New Years ReSolutions Booklet&quot; &bull; Art Direction, Copy, Research, Illustration, Adobe Illustrator, Adobe InDesign" href="img/visual_design/full/full_inner_sunset.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="New Years ReSolutions Booklet">
                     <span data-src="img/visual_design/thumbs/thumb_inner_sunset_small.png"></span>
@@ -414,7 +445,7 @@
                 </span>
              </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 margin-btm-med">
             	<a title="&quot;No Ka Oi Screenprint - Hawaiian Translation - The Best, or Unsurpassed&quot; &bull; Art Direction, Illustration, Adobe Illustrator, Adobe Photoshop" href="img/visual_design/full/full_no_ka_oi.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="No Ka Oi Tshirt">
                     <span data-src="img/visual_design/thumbs/thumb_no_ka_oi_small.png"></span>
@@ -427,7 +458,7 @@
            </div>
         </div>
         <div class="row">
-        	<div class="col-sm-6">
+        	<div class="col-sm-6 margin-btm-med">
             <a title="&quot;Vacaville Zoo Coloring Contest Poster and Coloring Sheet&quot; &bull; Art Direction, Illustration, Graphic Design, Adobe Illustrator" href="img/visual_design/full/full_vacaville_zoo_coloring.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Vacaville Zoo Coloring">
                     <span data-src="img/visual_design/thumbs/thumb_vacaville_zoo_coloring_small.png"></span>
@@ -438,7 +469,7 @@
                 </span>
              </a>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 margin-btm-med">
             	<a title="&quot;Von Tease&quot; &bull; Art Direction, Illustration, Adobe Illustrator" href="img/visual_design/full/full_von_tease.png" rel="example1">
                 <span data-class="img-border img-circle"  data-picture data-alt="Von Tease">
                     <span data-src="img/visual_design/thumbs/thumb_von_tease_small.png"></span>
@@ -451,7 +482,7 @@
            </div>
         </div>
         <div class="row margin-btm-lrg">
-        	<div class="col-sm-6" id="motionGraphics">
+        	<div class="col-sm-6 margin-btm-med" id="motionGraphics">
             
             	<video class="videoResponsive margin-btm-med" controls preload="none"  poster="html5video/Jason-Post--name-title-project-960x540.jpg">
                     <source src="html5video/miro-video/Jason-Post--name-title-project-960x540.mp4" type="video/mp4" />
@@ -523,7 +554,7 @@
           <div class="col-md-8 col-md-offset-2">
             <div class="text-center">
             <h2><i class="fa fa-comments"></i> Resume of Jason Post</h2>
-              <h3><a href="img/Resume-Jason-Post---jpost-design.pdf" class="btn btn-lg btn-primary"><i class="fa fa-file-text-o"></i> Download PDF Version</a></h3>
+              <h3><a href="img/Resume--Jason-Post--jpost-design-UI-UX-Web-Design.doc" class="btn btn-lg btn-primary"><i class="fa fa-file-text-o"></i> Download Word Doc Version</a></h3>
             <div>
             <p class="lead margin-btm-lrg">The perfect overlap of technical-minded plus creative-minded that you're looking for. Experienced web developer, social media manager, and graphic designer. Particularly interested in Front End Web Development, implementing UI/UX best practices that drive results, and beautifying media in all of its forms.
             </p>
@@ -533,9 +564,20 @@
             	<h3><i class="fa fa-code"></i> Code Samples</h3>
               <p class="lead">This entire site was hand-coded. Do you like it? I hope so :)</p> 
               </div>
-  				<p>Building on a customized Twitter Bootstrap foundation, I designed this site to be mobile-first with progressive enhancement. I'm incorporating typography best practices to set type to be pixel-agnostic with <code>rem</code>, serving images in a responsive way with the <code>picturefill</code> method, and semantically marking up the page with HTML5 tags like <code>nav</code>, <code>article</code>, and <code>section</code>. All this combines for enhanced SEO, screen reader ability, and all-around better experience. Check out the source HTML and CSS for reference.</p>
-              <p>Source code not enough? I also have some hosted pure code samples for a dynamic Google Map built on PHP that queries a MySQL server, and parses in JavaScript, utilizing the Google Maps API v3. </p>
-            <h4 class="text-center"><a href="http://jpost-design.com/code" class="btn btn-lg btn-primary"><i class="fa fa-code"></i> Pure Code Baby!</a></h4>
+  				<p>Building on a customized Twitter Bootstrap foundation, I designed this site to be mobile-first with progressive enhancement.</p> 
+            <p>I'm incorporating typography best practices to set type to be pixel-agnostic with <code>rem</code>, serving images in a responsive way with the <code>Picturefill</code> library, and semantically marking up the page with HTML5 tags like <code>nav</code>, <code>article</code>, and <code>section</code>. </p>
+                <p>All this combines for enhanced SEO, screen reader ability, and all-around better experience. Check out the source HTML and CSS for reference.</p>
+              <h4 class="text-center">Need more than this site's source? </h4>
+              <p>I also have some jQuery, JavaScript and PHP <a href="https://github.com/jpostdesign/code_samples">code/programming samples on GitHub</a>. </p>
+              <p>Examples include: 
+              	<ul>
+                <li>Dynamic Google Map built on PHP that queries a MySQL server, and parses in JavaScript, utilizing the Google Maps API v3. <a href="#interactive-map">Live Map Demo Above</a></li>
+                <li>Enhancement to the Picturefill library that I implemented on my site, adding support for img-tag level <code>classes</code>, <code>titles</code> and <code>id</code> toenabling styling like <code>img-responsive</code> and <code>img-circle</code> with Twitter Bootstrap.</li>
+                <li>JSON-P GitHub.com repo search by keyword. </li>
+                <li>Proof of concept, jQuery and Bootstrap based simluated chat for a tech exercise.</li>
+              </ul>
+              </p>
+            <h4 class="text-center"><a href="https://github.com/jpostdesign/code_samples" class="btn btn-lg btn-primary"><i class="fa fa-code"></i> Pure Code Baby!</a></h4>
             
             <h3 class="clearfloat">Skills and Training:</h3>
               <div class="hr-grey clearfloat">
@@ -561,7 +603,26 @@
                             <li>Twitter Bootstrap</li>
                             <li class="margin-btm-lrg">iOS Apps (iPad & iPhone)</li>
                         </ul>
-                    <h4 class="clearfloat"><i class="fa fa-cloud"></i> Adobe Creative Cloud</h4>
+                    <h4 class="clearfloat"><i class="fa fa-envelope-o"></i> Email Marketing</h4>
+                        <ul class="inline-ul">
+                            <li>In-Bound Marketing</li>
+                            <li>HubSpot</li>
+                            <li>HTML Emails</li>
+                            <li>Pardot / Salesforce.com</li>
+                            <li>Database Administration and Management</li>
+                            <li class="margin-btm-lrg">Cross-Client Email Testing</li>
+                        </ul>
+                    <h4 class="clearfloat"><i class="fa fa-code"></i> JavaScript Libraries</h4>
+                        <ul class="inline-ul">
+                            <li>jQuery</li>
+                            <li>jQuery UI</li>
+                            <li>Modernizr</li>
+                            <li>Picturefill</li>
+                            <li>Twitter Bootstrap</li>
+                            <li>Spry</li>
+                            <li class="margin-btm-lrg">Zurb Foundation</li>
+                        </ul>
+            <h4 class="clearfloat"><i class="fa fa-cloud-download"></i> Adobe Creative Cloud</h4>
                         <ul class="inline-ul">
                             <li>Dreamweaver</li>
                             <li>Edge Inspect</li>
@@ -573,7 +634,8 @@
                             <li>Digital Publishing Suite</li>
                             <li>Fireworks</li>
                             <li>Acrobat Distiller</li>
-                            <li class="margin-btm-lrg">Acrobat Pro</li>
+                            <li>Acrobat Pro</li>
+                            <li class="margin-btm-lrg">After Effects</li>
                         </ul>
                         
                         <h4 class="clearfloat"><i class="fa fa-clipboard"></i> Microsoft Office Suite</h4>
@@ -604,23 +666,26 @@
                             <li>Final Cut Pro</li>
                             <li class="margin-btm-lrg">Premiere</li>
                         </ul>
-                        
-                        <h4 class="clearfloat"><i class="fa fa-wrench"></i> Mac and PC Expert</h4>
-                        <ul class="inline-ul">
-                            <li>Cisco Certified Trained</li>
-                            <li class="margin-btm-lrg">CompTIA A+ Certification Trained</li>
-                        </ul>
-        
         
         <h3 class="clearfloat">Experience: </h3>
               <div class="hr-grey clearfloat">
                 <hr>
               </div>
-              <h4 class="clearfloat experienceTitle">Freelance Web Developer and Designer, 2013 - Present</h4>
+              <h4 class="clearfloat experienceTitle">Contract Web Developer and Designer, 2013 - Present</h4>
               		<h4 class="clearfloat experienceEmployer">jpost-design - San Francisco Bay Area, CA</h4>
                     	<p>Leading web design and app development following the latest technology and standards, while incorporating tried and
 true traditional design skills and styles. Specifics tied under non-disclosure agreements. </p>
                         <ul>
+                        		<li>Email Marketing
+                            		<ul>
+                                    <li>HTML email design and coding</li>
+                                    <li>Increased house/retention list by 22,000 clients with dynamic vs static processes</li>
+                                    <li>Email campaign management</li>
+                                    <li>Campaign integration with HubSpot, Pardot, Salesforce CRM</li>
+                                    <li>Prospect database management</li>
+                                    <li>Prospect flow documentation and analytics</li>
+                                </ul>
+                            </li>
                             <li>Responsive Web Design
                             		<ul>
                                     <li>Designing mobile first with progressive enhancement support</li>
@@ -736,7 +801,7 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
                     <li>iPad App - Adobe Digital Publishing Suite</li>
                     <li class="margin-btm-lrg">After Effects and Cinema 4D Workflow</li>
                   </ul>
-              	<h4 class="educationDegree">BA Studio Art</h4>
+              	<h4 class="educationDegree">BA Design and Applied Arts</h4>
               <h4>University of Hawaii at Manoa - Honolulu, HI</h4>
                 	<ul>
                     <li>Award - Outstanding Electronic Arts</li>
@@ -744,7 +809,7 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
    					<li>Breadth and depth of &quot;new&quot; and &quot;traditional&quot; processes and styles</li>
                     <li class="margin-btm-lrg">Creating a "little piece of SoHo" in the commons gallery for the department head of Graphic Design </li>
                   </ul>
-              <h4 class="educationDegree">AS Digital Media</h4>
+              <h4 class="educationDegree">AS Digital Media Production and Animation</h4>
               <h4>Leeward Community College - Pearl City, HI</h4>
               		<ul>
                     	<li>Award - Associate of Sciences Degree Valedictorian</li>
@@ -783,12 +848,6 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
                         <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#x70;&#x6f;&#x73;&#116;&#x6d;&#97;&#x6e;&#64;&#106;&#112;&#x6f;&#x73;&#x74;&#x2d;&#x64;&#101;&#x73;&#105;&#103;&#x6e;&#x2e;&#x63;&#x6f;&#109;" target="_top" class="btn btn-lg btn-primary"><i class="fa fa-envelope"></i> Email</a>
                    </div>
       </div>
-      		<div class="row">
-                  <div class="col-md-6 col-md-offset-3 text-center">
-                    <h4 class="graphicText">Hope you enjoyed my site, and look forward to hearing from you soon.</h4>
-                    <h4 class="graphicText"> - Jason</h4>
-                  </div>
-                </div>
       </div>
             </div>
                 
@@ -867,7 +926,11 @@ true traditional design skills and styles. Specifics tied under non-disclosure a
 <script type="text/javascript">
 			$(document).ready(function(){
 				//Examples of how to assign the ColorBox event to elements
-				$("a[rel='example1']").colorbox();
+				$("a.imgGroup01").colorbox({rel:'group01'});
+				$("a.imgGroup02").colorbox({rel:'group02'});
+				$("a.imgGroup03").colorbox({rel:'group03'});
+				$("a.imgGroup04").colorbox({rel:'group04'});
+				//$("a[rel='example1']").colorbox();
 				$("a[rel='example2']").colorbox({transition:"fade"});
 				$("a[rel='example3']").colorbox({transition:"none", width:"75%", height:"75%"});
 				$("a[rel='example4']").colorbox({slideshow:true});
