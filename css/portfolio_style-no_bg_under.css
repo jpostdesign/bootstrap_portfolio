@@ -169,6 +169,10 @@ i.service-icon {
 .portfolio-item {
   margin-bottom: 25px;
 }
+.services ul, .portfolio ul {
+	display:inline-block;
+	text-align:left;
+}
 
 /* Call to Action */
 
