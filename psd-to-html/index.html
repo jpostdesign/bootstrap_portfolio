@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Introducing Events</title>
+        <meta name="description" content="Start conversations with your users with Intercom">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+         <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+    <script>
+		$( document ).ready(function(e) {
+            $( ".imgToggleButton" ).click(function() {
+			console.log("click logged");
+			$( ".imgToggle" ).toggle( "slow", function() {
+			// Animation complete.
+			});
+		});
+        });
+		
+	</script>
+    <div class="imgToggleButton" id="toggleButton">Toggle Overlay</div>
+    <div class="imgToggle imgYesNo">Overlay On - Flattened PSD on top to compare</div>
+    <div style="position: absolute; left: 50%; top:-3px; z-index:900">
+        <div style="position: relative; left: -50%; box-shadow:0 0 10px rgba(0,0,0,0.42);">
+			<img class="imgToggle" src="events-landing-page-design.jpg" />
+         </div>
+     </div>
+    <a href="https://www.intercom.io/"><img class="logoGrey" src="img/logoGrey.png" width="44" height="44" alt="intercom logo"/></a>
+    <section class="container">
+    <article>
+   	  <div class="bgBlue">
+      	<div class="column">
+   		  <header class="Introducing_Events">
+           	<h1>Introducing Events</h1>
+           </header>
+   		<p>Start conversations with your users based on what they are doing in your product, not just who they are.</p>
+        </div>
+        <div class="relative">
+   		<p class="User_performs_an_action">User performs<br> an action</p>
+   		<p class="Intercom_records_the_event">Intercom records the event</p>
+   		<p class="Message_at_the__perfect_time">Message at the  perfect time</p>
+        </div>
+   	  </div>
+       <div class="bgMessageUsers">
+       <div class="column">
+       		<h2>Message users at the perfect time</h2>
+                <p>Events will help you send more timely messages that better engage your users.</p>
+                	<ul>
+                    <li>Product managers can get better feedback</li>
+                    <li>Growth marketers can drive adoption of features</li>
+                    <li>Customer success agents can provide proactive support</li>
+                  </ul>
+                <a href="http://docs.intercom.io/filtering-users-by-events/Tracking-User-Events-in-Intercom"><div class="button">Start using Events</div></a>
+       </div>
+       </div>
+      <div class="bgOurCustomers">
+      	<div class="column">
+			<h3>Our customers love user events</h3>
+            <p><img src="img/customerCirlce.png" width="60" height="60" alt="Another happy intercom customer"/></p>
+            <p><span class="uppercase"></span>"Events helped us <span class="emphasizeQuote">double the engagement</span> of emails sent to users to provide proactive support."</p>
+            <img src="img/logoAgoraPulse.png" width="100" height="24" alt=""/>
+            
+            <p class="marginTopSmall"><span class="textColorAgora">Emeric Ernoult, Co-Founder of agora pulse</span></p>
+      </div>
+     </div>
+     <footer class="footerGrey">
+     	<a href="http://docs.intercom.io/"> Docs </a>
+       	<a href="http://insideintercom.io/"> Blog </a>
+       	<a href="https://twitter.com/intercom"> Twitter </a>
+       	<a href="https://www.facebook.com/intercominc"> Facebook </a>
+      </footer>
+    </article>
+    
+    </section>
+    <footer><p class="footerLast">Intercom, Inc - 98 Battery St. San Francisco, CA 94111, USA</p></footer>
+    </body>
+</html>
