@@ -87,30 +87,13 @@ h1 {
   letter-spacing:0.05rem;
   line-height:1.2;
 }
-h2 {
-  font-size: 24px;
-  color: rgb( 53, 59, 67 );
-  line-height: 1.333;
-  font-weight:400;
-  margin:48px 0 36px 0;
-  letter-spacing:0px;
-}
-h3 {
-	font-size: 12px;
-	color: rgb( 24, 26, 28 );
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: 2.5;
-	letter-spacing:0;
-	margin-top: 40px;
-}
-
 
 /* class styles */
 .bgBlue {
 	background: url(../img/bg_Blue.png) center center no-repeat #328ece;
     border-radius:8px 8px 0px 0px;
 	height:505px;
+	padding:0px 60px;
 }
 .bgBlue p {
     color: #afd3ed;
@@ -119,6 +102,7 @@ h3 {
 .bgMessageUsers {
 	height: 380px;
 	border-bottom:thin solid #f6f7fa;
+	padding:0px 60px;
 }
 
 .bgMessageUsers ul {
@@ -136,6 +120,7 @@ h3 {
 }
 .bgOurCustomers {
 	height:284px;
+	padding: 0px 50px;
 }
 .button {
 	font-size: 18px;
@@ -190,6 +175,7 @@ h3 {
 
 .imgToggle {
 	z-index:999;
+	display:none;
 }
 
 .imgToggleButton {
@@ -233,6 +219,23 @@ h3 {
 .marginTopSmall {
 	margin-top:8px;
 }
+.messageHeadline {
+  font-size: 24px;
+  color: rgb( 53, 59, 67 );
+  line-height: 1.333;
+  font-weight:400;
+  margin:48px 0 36px 0;
+  letter-spacing:0px;
+}
+.ourCustomersHeadline {
+	font-size: 12px;
+	color: rgb( 24, 26, 28 );
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 2.5;
+	letter-spacing:0;
+	margin-top: 40px;
+}
 .relative {
 	position:relative;
 }
@@ -244,23 +247,23 @@ h3 {
 }
 
 /* floated text */
-.User_performs_an_action {
+.p-arc-1 {
   position: relative;
-  left: 42px;
+  left: -18px;
   top: 248px;
   width:120px;
 }
 
-.Intercom_records_the_event {
+.p-arc-2 {
   position: relative;
-  left: 220px;
+  left: 160px;
   top: 36px;
   width:120px;
 }
 
-.Message_at_the__perfect_time {
+.p-arc-3 {
   position: relative;
-  left: 405px;
+  left: 345px;
   top: 120px;
   width:120px;
 }
