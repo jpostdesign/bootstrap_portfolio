@@ -60,7 +60,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* element styles */
+   
+   /* From a combination of Photoshop Asset Generation, and Copy CSS for quickest workflow from PSD to HTML */
+   /* Styles then edited and hand-coded if needed for minimization and conciseness */
+   /* Learn more about new workflow and features at https://helpx.adobe.com/photoshop/how-to/extract-psd-assets-browser.html and https://helpx.adobe.com/photoshop/using/generate-assets-layers.html */
+   
+   /* Don't hate it till you try it and understand it */
+ 
+/* ///
+element styles 
+///*/
 
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -71,14 +80,14 @@ a {
 }
 
 body {
-    background-color:#edf0f6;
-    text-align:center;
-	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding:28px 0;
-	font-size: 16px;
-	line-height: 1.5;
-	font-weight:300;
-	letter-spacing:0.03rem;
+  background-color: rgb( 237, 240, 246 ); /*Photoshop generate assets - copy css outputs spaces in rgb for readability */
+  text-align:center;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding:28px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight:300;
+  letter-spacing:0.03rem;
 }
 h1 {
   font-size: 30px;
@@ -88,69 +97,73 @@ h1 {
   line-height:1.2;
 }
 
-/* class styles */
+/*///
+class styles 
+///*/
+
 .bgBlue {
-	background: url(../img/bg_Blue.png) center center no-repeat #328ece;
-    border-radius:8px 8px 0px 0px;
-	height:505px;
-	padding:0px 60px;
+  background: url(../img/bg_Blue.png) center center no-repeat rgb( 50, 142, 206 );
+  border-radius:8px 8px 0px 0px;
+  height:505px;
+  padding:0px 60px;
 }
+
 .bgBlue p {
-    color: #afd3ed;
-	font-weight:100;
+  color: rgb( 175, 211, 237 );
+  font-weight:100;
 }
 .bgMessageUsers {
-	height: 380px;
-	border-bottom:thin solid #f6f7fa;
-	padding:0px 60px;
+  height: 380px;
+  border-bottom:thin solid rgb( 246, 247, 250 );
+  padding:0px 60px;
 }
 
 .bgMessageUsers ul {
-	list-style-position: inside;
-	padding-left:0px;
+  list-style-position: inside;
+  padding-left:0px;
 }
 
 .bgMessageUsers li {
-	line-height:24px;
-	margin-bottom:16px;
+  line-height:24px;
+  margin-bottom:16px;
 }
 
 .bgMessageUsers p, .bgMessageUsers ul, .bgOurCustomers p {
-	color: rgb( 122, 131, 137 );
+  color: rgb( 122, 131, 137 );
 }
 .bgOurCustomers {
-	height:284px;
-	padding: 0px 50px;
+  height:284px;
+  padding: 0px 50px;
 }
 .button {
-	font-size: 18px;
-	font-weight:400;
-	color: rgb( 255, 255, 255 );
-	border-radius: 3px;
-	background-color: rgb( 254, 98, 11 );
-	padding: 14px 28px;
-	width:auto;
-	display:inline-block;
-	margin-top:24px;
+  font-size: 18px;
+  font-weight:400;
+  color: rgb( 255, 255, 255 );
+  border-radius: 3px;
+  background-color: rgb( 254, 98, 11 );
+  padding: 14px 28px;
+  width:auto;
+  display:inline-block;
+  margin-top:24px;
 }
 .column {
-	padding:0px 60px;
+  padding:0px 60px;
 }
 .container {
-    width:560px;
-    margin: 30px auto;
-	border-radius:8px;
-	box-shadow: 0.5px 0.866px 3px 0px rgb( 195, 201, 211 );
-	background-color:#ffffff;
+  width:560px;
+  margin: 30px auto;
+  border-radius:8px;
+  box-shadow: 0.5px 0.866px 3px 0px rgb( 195, 201, 211 );
+  background-color:#ffffff;
 }
 .displayInline {
-	display:inline;
+  display:inline;
 }
 .displayInlineBlock {
-	display:inline-block;
+  display:inline-block;
 }
 .emphasizeQuote {
-	font-weight:500;
+  font-weight:500;
 }
 .footerGrey {
   border-style: solid;
@@ -174,50 +187,50 @@ h1 {
 }
 
 .imgToggle {
-	z-index:999;
-	display:none;
+  z-index:999;
+  display:none;
 }
 
 .imgToggleButton {
-	cursor: pointer;
-	position:fixed;
-	width: 150px;
-	top: 50px;
-	left: 50px;
-	border-radius: 10px;
-	border: 2px solid #EEE;
-	box-shadow: 1px 1px 3px 1px rgba(62,60,60,1.00);
-	background-color: rgba(180,131,31,1.00);
-	color:rgba(238,237,244,1.00);
-	padding: 10px;
-	z-index: 910;
+  cursor: pointer;
+  position:fixed;
+  width: 150px;
+  top: 50px;
+  left: 50px;
+  border-radius: 10px;
+  border: 2px solid rgb( 238, 238, 238 );
+  box-shadow: 1px 1px 3px 1px rgba( 62, 60, 60, 1.00 );
+  background-color: rgb( 180, 131, 31 );
+  color:rgb( 238, 237, 244 );
+  padding: 10px;
+  z-index: 910;
 }
 .imgYesNo{
-	position:fixed;
-	width: 130px;
-	top: 100px;
-	left: 61px;
-	border-radius: 0 0 10px 10px;
-	background-color: rgba(200,171,51,1.00);
-	color:rgba(238,237,244,1.00);
-	padding: 10px;
-	z-index: 910;
+  position:fixed;
+  width: 130px;
+  top: 100px;
+  left: 61px;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb( 200, 171, 51 );
+  color:rgb( 238, 237, 244 );
+  padding: 10px;
+  z-index: 910;
 }
 
 .Introducing_Events {
-	padding: 25px 0 0 0;
+  padding: 25px 0 0 0;
 }
 
 .list ul {
-	margin:0 auto;
-	text-align:center;
+  margin:0 auto;
+  text-align:center;
 }
 
 .logoGrey {
-	align: center;
+  align: center;
 }
 .marginTopSmall {
-	margin-top:8px;
+  margin-top:8px;
 }
 .messageHeadline {
   font-size: 24px;
@@ -228,16 +241,16 @@ h1 {
   letter-spacing:0px;
 }
 .ourCustomersHeadline {
-	font-size: 12px;
-	color: rgb( 24, 26, 28 );
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: 2.5;
-	letter-spacing:0;
-	margin-top: 40px;
+  font-size: 12px;
+  color: rgb( 24, 26, 28 );
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2.5;
+  letter-spacing:0;
+  margin-top: 40px;
 }
 .relative {
-	position:relative;
+  position:relative;
 }
 .textColorAgora {
   font-size: 14px;
