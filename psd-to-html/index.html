@@ -20,7 +20,7 @@
     <script>
 		$( document ).ready(function(e) {
             $( ".imgToggleButton" ).click(function() {
-			console.log("click logged");
+			console.log("Toggle button click event fired");
 			$( ".imgToggle" ).toggle( "slow", function() {
 			// Animation complete.
 			});
@@ -30,8 +30,8 @@
 	</script>
     <div class="imgToggleButton" id="toggleButton">Toggle Overlay</div>
     <div class="imgToggle imgYesNo">Overlay On - Flattened PSD on top to compare</div>
-    <div style="position: absolute; left: 50%; top:-3px; z-index:900">
-        <div style="position: relative; left: -50%; box-shadow:0 0 10px rgba(0,0,0,0.42);">
+    <div class="centerOverlayParent">
+        <div class="centerOverlayChild">
 			<img class="imgToggle" src="events-landing-page-design.jpg" />
          </div>
      </div>

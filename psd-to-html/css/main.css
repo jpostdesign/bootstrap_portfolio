@@ -89,6 +89,7 @@ body {
   font-weight:300;
   letter-spacing:0.03rem;
 }
+
 h1 {
   font-size: 30px;
   color: rgb( 255, 255, 255 );
@@ -112,6 +113,7 @@ class styles
   color: rgb( 175, 211, 237 );
   font-weight:100;
 }
+
 .bgMessageUsers {
   height: 380px;
   border-bottom:thin solid rgb( 246, 247, 250 );
@@ -131,10 +133,12 @@ class styles
 .bgMessageUsers p, .bgMessageUsers ul, .bgOurCustomers p {
   color: rgb( 122, 131, 137 );
 }
+
 .bgOurCustomers {
   height:284px;
   padding: 0px 50px;
 }
+
 .button {
   font-size: 18px;
   font-weight:400;
@@ -146,9 +150,26 @@ class styles
   display:inline-block;
   margin-top:24px;
 }
+
+/* centerOverlays for image vs HTML comparison */
+.centerOverlayParent {
+  position: absolute; 
+  left: 50%; 
+  top:-3px; 
+  z-index:900;
+}
+
+.centerOverlayChild {
+  position: relative; 
+  left: -50%; 
+  box-shadow:0 0 10px rgba(0,0,0,0.42);
+}
+/*end centerOverlays */
+
 .column {
   padding:0px 60px;
 }
+
 .container {
   width:560px;
   margin: 30px auto;
@@ -156,15 +177,19 @@ class styles
   box-shadow: 0.5px 0.866px 3px 0px rgb( 195, 201, 211 );
   background-color:#ffffff;
 }
+
 .displayInline {
   display:inline;
 }
+
 .displayInlineBlock {
   display:inline-block;
 }
+
 .emphasizeQuote {
   font-weight:500;
 }
+
 .footerGrey {
   border-style: solid;
   border-width: 1px;
@@ -173,6 +198,7 @@ class styles
   border-radius:0 0 8px 8px;
   padding:20px 0px;
 }
+
 .footerGrey a {
   font-size: 12px;
   color: rgb( 180, 186, 200 );
@@ -186,6 +212,7 @@ class styles
   color: rgb( 182, 188, 200 );
 }
 
+/* imgToggles for interactive button to overlay image over HTML*/
 .imgToggle {
   z-index:999;
   display:none;
@@ -205,6 +232,7 @@ class styles
   padding: 10px;
   z-index: 910;
 }
+
 .imgYesNo{
   position:fixed;
   width: 130px;
@@ -216,6 +244,7 @@ class styles
   padding: 10px;
   z-index: 910;
 }
+/*end imgToggle */
 
 .Introducing_Events {
   padding: 25px 0 0 0;
@@ -229,9 +258,11 @@ class styles
 .logoGrey {
   align: center;
 }
+
 .marginTopSmall {
   margin-top:8px;
 }
+
 .messageHeadline {
   font-size: 24px;
   color: rgb( 53, 59, 67 );
@@ -240,6 +271,7 @@ class styles
   margin:48px 0 36px 0;
   letter-spacing:0px;
 }
+
 .ourCustomersHeadline {
   font-size: 12px;
   color: rgb( 24, 26, 28 );
@@ -249,9 +281,11 @@ class styles
   letter-spacing:0;
   margin-top: 40px;
 }
+
 .relative {
   position:relative;
 }
+
 .textColorAgora {
   font-size: 14px;
   font-family: "Helvetica Neue";
