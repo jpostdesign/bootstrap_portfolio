@@ -1,16 +1,15 @@
-/* color guide ////
-////////
+/* ////// color guide ////// */
+/*
 blue light 	rbga(70,114,176,1)
 blue med 		rgba(16,76,160,1)
 blue dark 		rgba(40,16,93,1)
 
 orange med		rgba(188,140,56,1)
 orange dark	rgba(137,102,41,1)		
-////////
 */
+/* ////// end color guide ////// */
 
 /* Global Styles */
-
 html,
 body {
   height: 100%;
@@ -29,9 +28,9 @@ body {
   font-size: 4.5em;
   font-weight: 700;
 }
+/*end global styles */
 
 /* Side Menu */
-
 #sidebar-wrapper {
   margin-right: -250px;
   right: 0;
@@ -118,16 +117,16 @@ body {
 .toggle {
   margin: 5px 5px 0 0;
 }
+/* end Side Menu */
 
 
 /* Intro */
-
 .intro {
   padding: 3.4rem 0;
 }
+/* end Intro */
 
 /* Services */
-
 .services {
   background: #7fbbda;
   padding: 50px 0;
@@ -149,9 +148,9 @@ i.service-icon {
   vertical-align: middle; 
   text-align: center;
 }
+/* end Services */
 
 /* Callout */
-
 .callout {
   color: #ffffff;
   display: table;
@@ -163,6 +162,7 @@ i.service-icon {
   -o-background-size: cover;
   background-size: cover;
 }
+/* end Callout */
 
 /* Portfolio */
 .lead a {
@@ -179,9 +179,9 @@ i.service-icon {
 	display:inline-block;
 	text-align:left;
 }
+/* end Portfolio */
 
 /* Call to Action */
-
 .call-to-action {
   color: #ffffff;
   background: #0a5175;
@@ -191,31 +191,18 @@ i.service-icon {
 .call-to-action .btn {
   margin: 10px;
 }
-
-/* Map */
-
-.map {
-  height: 500px;
-}
+/* end Call to Action */
 
 /* Footer */
-
 .footer {
   padding: 1.4rem 0;
   background: rgba(70,114,176,1);
   color: rgba(255,255,255,1);
   letter-spacing:0.1rem;
 }
+/* end footer */
 
-.top-scroll {
-  margin-top: 50px;
-}
-
-.top-scroll a {
-  text-decoration: none;
-  color: inherit;
-}
-
+/* icon style */
 i.scroll {
   color: #333333;
 }
@@ -223,10 +210,11 @@ i.scroll {
 i.scroll:hover {
   color: #0a5175;
 }
+/* end icon style */
+/* ////// end base style ////// */
 
-/* customized css
-/////////////////
-///////////////// */
+
+/* ////// Customized Style Overrides ////// */
 body {
 	background-color: #FAFAFA;
 }
@@ -325,6 +313,8 @@ i.service-icon {
 	border-color: #2a6496;
 }
 }
+/* end border workaround */
+
 .inline-ul > li {
     float:left;
     margin-right:2.8rem;
@@ -397,13 +387,9 @@ i.service-icon {
 	height: 1px;
 	opacity: 0;
 }
+/* ////// end Customized Style Overrides ////// */
 
-/* ///////
-Map
-////// */
-/*
-/// Google Map Styles
-*/
+/* /////// Interactive Google Map ////// */
 #google-map img {
 	max-width: none !important;
 }
@@ -550,30 +536,38 @@ a:visited.zipListNames  {
 	height: 500px;
 	max-height: 90%;
 }
+/* ////// end Interactive Google Map ////// */
 
-/* ////////////
-backgrounds setup to change 
-////////////*/
 
+/* /////// responsive backgrounds /////// */
+/* set under background to avoid FOUC and setup 100% cover size */
 .bgUnderCover-topBG, .topBG, .bgUnderCover-freebieBG, .freebieBG, .bgUnderCover-contactBG, .contactBG, .bgUnderCover-footerBG, .footerBG  {
 	display: table;
  	height: 100%;
   	width: 100%;
   	position: relative;
-	background: url(../img/background/bg_sf_bay_bridge_small.jpg) no-repeat center center scroll; 
+	background: rgba(41,73,148,1.00) no-repeat center center scroll; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-/*.bgUnderCover-topBG {
-	background: url(../img/background/bg_sf_bay_bridge_small.png) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-*/
+    /* troubleshoot FOUC case in iOS */
+    /*
+    .bgUnderCover-topBG {
+      background: url(../img/background/bg_sf_bay_bridge_small.png) no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    */
+    /* end troubleshoot */
+
+/* end under background to avoid FOUC and setup 100% cover sizes*/
+
+
+/* top splash screen background */
 .topBG {
   background: url(../img/background/bg_sf_bay_bridge_small.jpg) no-repeat center center scroll; 
   -webkit-background-size: cover;
@@ -599,19 +593,9 @@ backgrounds setup to change
 		  background-size: cover;
 	}
 }
+/* end top splash screen background */
 
-/* ////////////
-backgrounds setup to change 
-////////////*/
-
-/* .bgUnderCover-freebieBG {
-	background: url(../img/background/bg_sf_nob_hill_small.png) no-repeat center center scroll; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-*/
+/* freebie section background */
 .freebieBG {
   background: url(../img/background/bg_sf_nob_hill_small.jpg) no-repeat center center scroll; 
   -webkit-background-size: cover;
@@ -637,19 +621,9 @@ backgrounds setup to change
 		  background-size: cover;
 	}
 }
+/* end freebie background */
 
-/* ////////////
-backgrounds setup to change 
-////////////*/
-
-/* .bgUnderCover-contactBG {
-	background: url(../img/background/bg_sf_palace_fine_arts_small.png) no-repeat center center scroll; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-*/
+/* contact background */
 .contactBG {
   background: url(../img/background/bg_sf_palace_fine_arts_small.jpg) no-repeat center center scroll; 
   -webkit-background-size: cover;
@@ -679,19 +653,9 @@ backgrounds setup to change
 		  background-size: cover;
 	}
 }
+/* end contact background */
 
-/* ////////////
-backgrounds setup to change 
-////////////*/
-
-/* .bgUnderCover-footerBG {
-	background: url(../img/background/bg_sf_transamerica_small.png) no-repeat center center scroll; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-*/
+/* footer background */
 .footerBG {
   background: url(../img/background/bg_sf_transamerica_small.jpg) no-repeat center center scroll; 
   -webkit-background-size: cover;
@@ -717,9 +681,13 @@ backgrounds setup to change
 		  background-size: cover;
 	}
 }
+/* end footer background */
+/* ////// end responsive backgrounds ////// */
 
+
+/* ////// ColorBox Core Style ////// */
 /*
-    ColorBox Core Style
+    For lightbox overlay effect
     The following rules are the styles that are consistant between themes.
     Avoid changing this area to maintain compatability with future versions of ColorBox.
 */
@@ -793,3 +761,4 @@ backgrounds setup to change
 .cboxIE #cboxMiddleRight{background:transparent; filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=../images/internet_explorer/borderMiddleRight.png, sizingMethod='scale');}
 
 */
+/* ////// end Colorbox Core Style ////// */
