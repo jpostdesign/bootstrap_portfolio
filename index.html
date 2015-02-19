@@ -1495,16 +1495,15 @@
     <!-- /Footer -->
     
     <!-- scripts at the end of the document so the pages load faster -->
-    
     <!-- JavaScript -->
     <script src="js/matchmedia.js"></script>
     <script src="js/picturefill.js"></script>
     
     <!-- Load jQuery before Bootstrap -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-    
- <!-- Bootstrap CDN recommended from their site: -->
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+        
+    <!-- Bootstrap CDN recommended from their site: -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>  
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
     <script>
@@ -1518,33 +1517,33 @@
             $('#sidebar-wrapper').toggleClass('active');
         });
 		
-		$('html').click(function() {
-		//Hide the menus if visible
-			if ($('#sidebar-wrapper').hasClass('active')) {
-					$('#sidebar-wrapper').toggleClass('active');
-			}
-		});
-		
-		$('#menu-close, #menu-toggle').click(function(event){
-			event.stopPropagation();
-		});
-
-      $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-            || location.hostname == this.hostname) {
-
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
+        $('html').click(function() {
+        //Hide the menus if visible
+          if ($('#sidebar-wrapper').hasClass('active')) {
+              $('#sidebar-wrapper').toggleClass('active');
           }
         });
-      });
+        
+        $('#menu-close, #menu-toggle').click(function(event){
+          event.stopPropagation();
+        });
+    
+          $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                || location.hostname == this.hostname) {
+    
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html,body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+          });
     </script>
     
     <!-- Colorbox scripts -->
@@ -1552,18 +1551,8 @@
 <script type="text/javascript">
 			$(document).ready(function(){
 				//Examples of how to assign the ColorBox event to elements
-				$("a.imgGroup01").colorbox({rel:'group01'});
-				$("a.imgGroup02").colorbox({rel:'group02'});
-				$("a.imgGroup03").colorbox({rel:'group03'});
-				$("a.imgGroup04").colorbox({rel:'group04'});
-				$("a.imgGroup05").colorbox({rel:'group05'});
-				$("a.imgGroup06").colorbox({rel:'group06'});
-				$("a.imgGroup07").colorbox({rel:'group07'});
-				$("a.imgGroup08").colorbox({rel:'group08'});
-				$("a.imgGroup09").colorbox({rel:'group09'});
-       $("a.imgGroup10").colorbox({rel:'group10'});
-       $("a.imgGroup11").colorbox({rel:'group11'});
-				/* $("a[rel='example1']").colorbox();
+        //For future reference
+        /* $("a[rel='example1']").colorbox();
 				$("a[rel='example2']").colorbox({transition:"fade"});
 				$("a[rel='example3']").colorbox({transition:"none", width:"75%", height:"75%"});
 				$("a[rel='example4']").colorbox({slideshow:true});
@@ -1578,6 +1567,19 @@
 					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
 					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
 				}); */
+        //end examples
+        
+				$("a.imgGroup01").colorbox({rel:'group01'});
+				$("a.imgGroup02").colorbox({rel:'group02'});
+				$("a.imgGroup03").colorbox({rel:'group03'});
+				$("a.imgGroup04").colorbox({rel:'group04'});
+				$("a.imgGroup05").colorbox({rel:'group05'});
+				$("a.imgGroup06").colorbox({rel:'group06'});
+				$("a.imgGroup07").colorbox({rel:'group07'});
+				$("a.imgGroup08").colorbox({rel:'group08'});
+				$("a.imgGroup09").colorbox({rel:'group09'});
+				$("a.imgGroup10").colorbox({rel:'group10'});
+				$("a.imgGroup11").colorbox({rel:'group11'});
 			});
 		</script>
         
