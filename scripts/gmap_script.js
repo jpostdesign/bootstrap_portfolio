@@ -1,24 +1,18 @@
 // JavaScript Document
-		var openMapIcon = {
+      var openMapIcon = {
           url: 'img/web_design/map-open-icon.png',
           size: new google.maps.Size(24, 24),
           origin: new google.maps.Point(0,0),
           anchor: new google.maps.Point(5, 24)
         };
 		
-		var seasonalMapIcon = {
-          url: 'img/web_design/map-open-icon.png',
-          size: new google.maps.Size(24, 24),
-          origin: new google.maps.Point(0,0),
-          anchor: new google.maps.Point(-8, 36)
-        };
-		
-		var closedMapIcon = {
-          url: 'img/web_design/map-closed-icon.png',
-          size: new google.maps.Size(24, 24),
-          origin: new google.maps.Point(0,0),
-          anchor: new google.maps.Point(21, 24)
-        };
+      var seasonalMapIcon = Object.create(openMapIcon);
+        seasonalMapIcon.url = 'img/web_design/map-open-icon.png';
+        seasonalMapIcon.anchor = new google.maps.Point(-8, 36);
+        		
+      var closedMapIcon = Object.create(openMapIcon);
+        closedMapIcon.url = 'img/web_design/map-closed-icon.png';
+        closedMapIcon.anchor = new google.maps.Point(21, 24);
 
  var center = null;
  var map = null;
@@ -77,30 +71,30 @@
 	 });
  }
 
- function addMarkerClosed(lat, lng, html) {
-	 var pt = new google.maps.LatLng(lat, lng);
-	 bounds.extend(pt);
-	var marker = new google.maps.Marker({
-			 position: pt,
-			 icon: closedMapIcon,
-			 map: map
-		 });
-	 var popup = new google.maps.InfoWindow({
-		 content: html,
-		 maxWidth: 250
-	 });
-	google.maps.event.addListener(marker, "click", function() {
-		 if (currentPopup != null) {
-			 currentPopup.close();
-			 currentPopup = null;
-		 }
-		 popup.open(map, marker);
-		 currentPopup = popup;
-	});
-	 google.maps.event.addListener(popup, "closeclick", function() {
-	 currentPopup = null;
-	 });
- }
+ function addMarkerClosed (lat, lng, html) {
+     var pt = new google.maps.LatLng(lat, lng);
+     bounds.extend(pt);
+    var marker = new google.maps.Marker({
+         position: pt,
+         icon: closedMapIcon,
+         map: map
+       });
+     var popup = new google.maps.InfoWindow({
+       content: html,
+       maxWidth: 250
+     });
+    google.maps.event.addListener(marker, "click", function() {
+       if (currentPopup != null) {
+         currentPopup.close();
+         currentPopup = null;
+       }
+       popup.open(map, marker);
+       currentPopup = popup;
+    });
+     google.maps.event.addListener(popup, "closeclick", function() {
+     currentPopup = null;
+     });
+   }
 
  function initialize() {
 	 map = new google.maps.Map(document.getElementById("google-map"), {
@@ -120,6 +114,7 @@
 	// extracting and looping through data
 		 
  //<![CDATA[
+
 addMarkerClosed(37.955246, -122.332397,'<div class="gmapInfoWindowAPIv3Container"><a class="gmapInfoWindowAPIv3 marketNameAPIv3 closedMarket" href="#interactive-map">San Pablo</a><p class="facebookLinkAPIv3"><a class="gmapInfoWindowAPIv3" href="#interactive-map" target="_top"><img src="images/facebook_logo_tiny.png" width="16" height="16" alt="Facebook logo" />&nbsp;Facebook Page</a></p><dl class="gmapInfoWindowAPIv3"><dt class="gmapInfoWindowAPIv3">Season</dt><dd class="gmapInfoWindowAPIv3">May 18 to October 26</dd><dt class="gmapInfoWindowAPIv3"> Saturday</dt><dd class="gmapInfoWindowAPIv3">10:00 AM to 2:00 PM</dd></dl><p class="gmapInfoWindowAPIv3 closedSeason">Closed for the season.</p></div>');
 addMarkerClosed(37.679829, -121.768784,'<div class="gmapInfoWindowAPIv3Container"><a class="gmapInfoWindowAPIv3 marketNameAPIv3 closedMarket" href="#interactive-map">Livermore</a><p class="facebookLinkAPIv3"><a class="gmapInfoWindowAPIv3" href="#interactive-map" target="_top"><img src="images/facebook_logo_tiny.png" width="16" height="16" alt="Facebook logo" />&nbsp;Facebook Page</a></p><dl class="gmapInfoWindowAPIv3"><dt class="gmapInfoWindowAPIv3">Season</dt><dd class="gmapInfoWindowAPIv3">May 16 to October 17</dd><dt class="gmapInfoWindowAPIv3"> Thursday</dt><dd class="gmapInfoWindowAPIv3">4:00 PM to 8:00 PM</dd></dl><p class="gmapInfoWindowAPIv3 closedSeason">Closed for the season.</p></div>');
 addMarkerClosed(38.003571, -121.841812,'<div class="gmapInfoWindowAPIv3Container"><a class="gmapInfoWindowAPIv3 marketNameAPIv3 closedMarket" href="#interactive-map">Antioch at Somersville Towne Center</a><p class="facebookLinkAPIv3"><a class="gmapInfoWindowAPIv3" href="#interactive-map" target="_top"><img src="images/facebook_logo_tiny.png" width="16" height="16" alt="Facebook logo" />&nbsp;Facebook Page</a></p><dl class="gmapInfoWindowAPIv3"><dt class="gmapInfoWindowAPIv3">Season</dt><dd class="gmapInfoWindowAPIv3">May 12 to October 27</dd><dt class="gmapInfoWindowAPIv3"> Sunday</dt><dd class="gmapInfoWindowAPIv3">9:00 AM to 2:00 PM</dd></dl><p class="gmapInfoWindowAPIv3 closedSeason">Closed for the season.</p></div>');
