@@ -26,9 +26,12 @@
     
     <!--jquery, matchmedia, picturefill, and bootstrap js at bottom of body -->
 
-    <!-- google maps -->
+    <!-- google maps --
+      -- removed becuase google changed its code and requirements -- 
+
     <script src="http://maps.google.com/maps/api/js?v=3&amp;sensor=false&amp;key=AIzaSyCVkRjPbtvZPwDuVAjJX4AZkILgPYvURxs" type="text/javascript"></script>
     <script src="scripts/gmap_script.js" type="text/javascript"></script>
+    -- end google maps -->
   </head>
 
   <body onLoad="initialize()">
@@ -212,7 +215,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 text-center">
+          <div class="col-sm-6 text-center">
             <div class="service-item">
               <a href="#webDesign"><i class="service-icon fa fa-laptop"></i></a>
               <h4 class="testThis">UI / UX Design and Development</h4>
@@ -226,7 +229,23 @@
                 <a href="#webDesign" class="btn btn-lg btn-primary margin-btm-lrg clearfloat">Explore Design and Dev</a>
             </div>
           </div>
-          <!-- Hide galery design -- 
+          <div class="col-sm-6 text-center">
+            <div class="service-item">
+              <a href="#multimediaVisualDesign"><i class="service-icon fa fa-picture-o"></i></a>
+              <h4>Multimedia Visual Design</h4>
+              <div>
+              <ul>
+				<li>Motion Graphics</li>
+				<li>Graphic Design</li>
+				<li>Screen Printing</li>
+				<li>Illustration</li>
+				<li>Branding and Identity</li>
+              </ul>
+              </div>
+                <a href="#multimediaVisualDesign" class="btn btn-lg btn-primary margin-btm-lrg">Explore Multimedia</a>
+            </div>
+          </div>
+          <!-- Hide gallery design -- 
 		  <div class="col-sm-6 text-center">
             <div class="service-item">
               <a href="#userExperience"><i class="service-icon fa fa-magnet"></i></a>
@@ -241,8 +260,10 @@
                 <a href="#userExperience" class="btn btn-lg btn-primary margin-btm-lrg">Explore Environmental</a>
             </div>
           </div> 
-		  -- end hide -->
+		  -- end gallery design -->
         </div>
+        <!-- hide Analytics and testing CTA
+          -- moved multimedia design above, in 6-col next to ui/ux
         <div class="row">
           <div class="col-sm-6 text-center">
             <div class="service-item">
@@ -276,7 +297,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> 
+      -- end Analytics and testing CTA -->
     </section>
     <!-- /Services -->
 
@@ -773,7 +795,7 @@
                     <span data-src="img/web_design/thumbs/thumb_cee_user_journey_email_signup_large.png" data-media="(min-width: 600px)"></span>
         
                      <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
-                    <noscript><img class="img-border img-circle" src="img/web_design/thumbs/thumb_cee_user_journey_email_signup_large.png" alt="Interactive Dynamic Google Map"></noscript>
+                    <noscript><img class="img-border img-circle" src="img/web_design/thumbs/thumb_cee_user_journey_email_signup_large.png" alt="User journey signup"></noscript>
                 </span>
              </a>
              <p class="lead">User Journey Map</p>
@@ -880,6 +902,7 @@
           </div>
 		   -- end hide -->
 		  
+          <!-- hide google map demo -- 
           <div class="row">
           <div class="col-sm-8 col-sm-offset-2">
               <a class="imgGroup08" title="&quot;Interactive Dynamic Map of 65-plus Farmers Markets&quot; &bull; Icons, Google API, PHP, MySQL" href="img/web_design/full/full_google_map_screenshot.png" >
@@ -887,7 +910,8 @@
                     <span data-src="img/web_design/thumbs/thumb_google_map_screenshot_small.png"></span>
                     <span data-src="img/web_design/thumbs/thumb_google_map_screenshot_large.png" data-media="(min-width: 600px)"></span>
         
-                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <!-- 
                     <noscript><img class="img-border img-circle" src="img/web_design/thumbs/thumb_google_map_screenshot_large.png" alt="Interactive Dynamic Google Map"></noscript>
                 </span>
              </a>
@@ -909,6 +933,7 @@
              </div>
           </div>
         </div>
+
         <div class="row">
         	<div class="col-sm-8 col-sm-offset-2">
             	<div>
@@ -937,6 +962,7 @@
               </div>
            </div>
         </div>
+        -- end google map demo -->
         
 		<!-- hide PCFMA responsive wireframe process -- with comments out for <noscript> comments -- 
         <div class="row">
@@ -1269,6 +1295,7 @@
         </div>
         -- end hide -->
         
+         <!-- hide Analytics and Testing section, became outdated -- 
          <div class="row" id="analytics">
           <div class="col-sm-8 col-sm-offset-2 margin-btm-xlrg">
             	<h3 class="margin-btm-lrg text-center">Analytics and Testing</h3>
@@ -1277,7 +1304,8 @@
                     <span data-src="img/user_experience/thumbs/thumb_facebook_insights_vallejo_line_graph_growth_and_engagement_small.png"></span>
                     <span data-src="img/user_experience/thumbs/thumb_facebook_insights_vallejo_line_graph_growth_and_engagement_large.png" data-media="(min-width: 600px)"></span>
         
-                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <!-- continue hide 
                     <noscript><img class="img-border img-circle" src="img/user_experience/thumbs/thumb_facebook_insights_vallejo_line_graph_growth_and_engagement_large.png" alt="Facebook Engagement Graph"></noscript>
                 </span>
              </a>
@@ -1306,7 +1334,8 @@
                     <span data-src="img/user_experience/thumbs/thumb_facebook_page_likes_and_growth_bar_chart_graph_small.png"></span>
                     <span data-src="img/user_experience/thumbs/thumb_facebook_page_likes_and_growth_bar_chart_graph_large.png" data-media="(min-width: 600px)"></span>
         
-                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <!-- continue hide 
                     <noscript><img class="img-border img-circle" src="img/user_experience/thumbs/thumb_facebook_page_likes_and_growth_bar_chart_graph_large.png" alt="Facebook Engagement Graph"></noscript>
                 </span>
              </a>
@@ -1329,7 +1358,8 @@
                     <span data-src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_small.png"></span>
                     <span data-src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_large.png" data-media="(min-width: 600px)"></span>
         
-                     <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <!-- continue hide 
                     <noscript><img class="img-border img-circle"  src="img/user_experience/thumbs/thumb_pcfma_web_mobile_redirect_large.png" alt="Google Analytics Mobile Redirect Improvement"></noscript>
                 </span>
              </a>
@@ -1358,6 +1388,7 @@
                 </div>
             </div>
         </div>
+        -- end Analytics and Testing section --> 
          
         <div class="row" id="multimediaVisualDesign">
           <div class="col-sm-8 col-sm-offset-2">
