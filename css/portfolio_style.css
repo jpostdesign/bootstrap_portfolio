@@ -315,7 +315,7 @@ i.service-icon {
 
 /* image borders. Previously with image circles, needed workaround for iPad with @media (min-width: 1100px) rule. Now images more square, no longer need rule*/
 .img-border {
-	border:0.8rem solid #428bca;
+	border:0.4rem solid #428bca;
 	margin-bottom: 2.4rem;
 }
 .img-border:hover,
