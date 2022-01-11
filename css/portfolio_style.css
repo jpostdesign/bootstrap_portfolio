@@ -83,9 +83,7 @@ body {
 }
 
 .sidebar-nav > .sidebar-brand {
-  height: 55px;
-  line-height: 55px;
-  font-size: 18px;
+  padding-top: 5px;
 }
 
 .sidebar-nav > .sidebar-brand a {
@@ -94,7 +92,6 @@ body {
 
 .sidebar-nav > .sidebar-brand a:hover {
   color: #fff;
-  background: none;
 }
 
 #menu-toggle {
