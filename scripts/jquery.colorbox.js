@@ -43,7 +43,7 @@
 		imgError: "This image failed to load.",
 
 		open: false,
-		returnFocus: true,
+		returnFocus: false,
 		reposition: true,
 		loop: true,
 		slideshow: false,
