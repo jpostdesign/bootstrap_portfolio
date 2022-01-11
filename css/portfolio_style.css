@@ -162,10 +162,10 @@ i.service-icon {
 }
 
 .thumbnailTitles {
-  text-align: center;
   min-height: 6.0rem;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
 /* end Services */
 
