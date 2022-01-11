@@ -128,9 +128,9 @@ body {
 
 /* Services */
 .services {
-  background: #7fbbda;
+  /* background: #7fbbda; */
   padding: 50px 0;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .service-item {
@@ -138,7 +138,7 @@ body {
 }
 
 i.service-icon {
-  border: 3px solid #ffffff;
+  border: 3px solid;
   border-radius: 50%;
   display: inline-block;
   font-size: 56px;
@@ -146,6 +146,22 @@ i.service-icon {
   height: 140px;
   line-height: 136px;
   vertical-align: middle; 
+  text-align: center;
+}
+
+i.service-icon {
+  border: 0.8rem solid;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 6rem;
+  width: 14rem;
+  height: 14rem;
+  line-height: 13rem;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.thumbnailTitles {
   text-align: center;
 }
 /* end Services */
@@ -299,18 +315,6 @@ code {
 
 .hr-grey hr { 
     border-top-color:#aaa;
-}
-
-i.service-icon {
-  border: 0.8rem solid #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 6rem;
-  width: 14rem;
-  height: 14rem;
-  line-height: 13rem;
-  vertical-align: middle; 
-  text-align: center;
 }
 
 /* image borders. Previously with image circles, needed workaround for iPad with @media (min-width: 1100px) rule. Now images more square, no longer need rule*/
