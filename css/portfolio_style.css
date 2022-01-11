@@ -166,6 +166,7 @@ i.service-icon {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  text-align: center;
 }
 /* end Services */
 
