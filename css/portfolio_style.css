@@ -165,6 +165,18 @@ i.service-icon {
   justify-content: center;
   text-align: center;
 }
+
+.portfolioThumbnail {
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+@media (min-width: 768px) {
+  .portfolioThumbnail {
+    max-width: 100%;
+    margin: 0;
+  }
+}
 /* end Services */
 
 /* Callout */
