@@ -16,6 +16,10 @@ body {
   width: 100%;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .vert-text {
   display: table-cell;
   vertical-align: middle;
@@ -165,6 +169,7 @@ i.service-icon {
   justify-content: center;
   text-align: center;
 }
+
 
 /* end Services */
 
