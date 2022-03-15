@@ -161,6 +161,7 @@
 			<ul class="inline-ul">
 				<li>HTML / HTML5</li>
 				<li>CSS / CSS3</li>
+				<li>JavaScript</li>
                 <li>Frameworks (e.g Bootstrap)</li>
 				<li>Adobe Analytics</li>
                 <li>Google Analytics</li>
@@ -192,8 +193,27 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-md-offset-2 text-center hr-grey">
-            <h2>Portfolio</h2>
+            <h2>Experience and Examples</h2>
             <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="service-item">
+              <a href="#uxDesign"><i class="service-icon fa fa-laptop"></i></a>
+              <h3>UI / UX Design and Development</h3>
+              <div>
+              <ul>
+				<li>Responsive Sites</li>
+				<li>Apps</li>
+				<li>Wireframes and Prototypes</li>
+                <li>Personas</li>
+                <li>User Flows</li>
+                <li>User Research</li>
+              </ul>
+              </div>
+                <a href="#uxDesign" class="btn btn-lg btn-primary margin-btm-med clearfloat">See All Design and Dev</a>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -266,6 +286,35 @@
              </a>
           </div>
         </div>
+        <div class="row margin-btm-lrg">
+          <div class="col-sm-4 margin-btm-med">
+            <a href="#google_map_screenshot" >
+              <h4 class="thumbnailTitles">PCFMA - Interactive Google Map</h4>
+                <span data-class="img-border img-rounded"  data-picture data-alt="Interactive Dynamic Google Map">
+                    <span data-src="img/web_design/full/full_google_map_screenshot.png"></span>
+        
+                    <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-border img-rounded" src="img/web_design/full/full_google_map_screenshot.png" alt="Interactive Dynamic Google Map"></noscript>
+                </span>
+             </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <div class="service-item">
+              <a href="#multimediaVisualDesign"><i class="service-icon fa fa-picture-o"></i></a>
+              <h3>Multimedia Visual Design</h3>
+              <div>
+              <ul>
+				<li>Motion Graphics</li>
+				<li>Graphic Design</li>
+				<li>Illustration</li>
+              </ul>
+              </div>
+                <a href="#multimediaVisualDesign" class="btn btn-lg btn-primary margin-btm-med">See All Multimedia</a>
+            </div>
+          </div>
+        </div>
         <div class="row">
           <div class="col-sm-4 margin-btm-med">
             <a href="#rubix_utopia_app">
@@ -331,7 +380,7 @@
         </div>
         <div class="row margin-btm-med" id="uxDesign">
         	<div class="col-sm-8 col-sm-offset-2">
-            	<!-- <h3 class="margin-btm-lrg text-center">UI / UX Design and Development</h3> -->
+            	<h3 class="margin-btm-lrg text-center">UI / UX Design and Development</h3>
          </div>
        </div>
 		  
@@ -1088,9 +1137,68 @@
 		  
           <div class="row margin-btm-xlrg">
           	<div class="col-sm-8 col-sm-offset-2">
+            	<div class="hr-grey clearfloat">
+                <hr>
               </div>
            </div>
           </div>
+		   
+		  
+          <div class="row">
+          <div class="col-sm-8 col-sm-offset-2" id="google_map_screenshot">
+              <a class="imgGroup08" title="&quot;Interactive Dynamic Map of 65-plus Farmers Markets&quot; &bull; Icons, Google API, PHP, MySQL" href="img/web_design/full/full_google_map_screenshot.png" >
+                <span data-class="img-border img-rounded"  data-picture data-alt="Interactive Dynamic Google Map">
+                    <span data-src="img/web_design/full/full_google_map_screenshot.png"></span>
+        
+                    <!--Fallback content for non-JS browsers. Same img src as the initial, unqualified source element.  -->
+                    <noscript><img class="img-border img-rounded" src="img/web_design/full/full_google_map_screenshot.png" alt="Interactive Dynamic Google Map"></noscript>
+                </span>
+             </a>
+             <p class="lead">Design/Development Interactive, Dynamic Google Map with JavaScript, HTML, PHP, and MySQL - <a href="#interactive-map">Live Example Below</a></p>
+             <p>Utilizing PHP and MySQL to create a dynamic array of JavaScript objects into Google Maps APIv3. Dynamically pulling criteria such as market name, season, time, location, and social media links, then appending to JavaScript to be displayed in an HTML info window. Additional logic included selecting markets by zip code, season, day of the week, available produce, and market producers.</p>
+             <div class="text-center margin-btm-lrg">
+             <ul>
+             	<li>Design and Development</li>
+             	<li>Icon Design</li>
+              <li>Typography</li>
+              <li>Usability Testing</li>
+              <li>Programming</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+             </ul>
+             </div>
+          </div>
+        </div>
+
+        <div class="row">
+        	<div class="col-sm-8 col-sm-offset-2">
+            	<div>
+                    <h4 id="interactive-map">Live Example: Interactive Google Map</h4>
+                            <p> Today's Simulated Date: March 28</p>
+                            <p><strong>Note: development license only. Dynamic links replaced with dummy links.</strong></p>
+                            <p><img class="img-responsive fa" src="images/gmap_open_icon.png" alt="open market icon"> - Open Market</p>
+                            <p><img class="img-responsive fa" src="images/gmap_closed_icon.png" alt="closed market icon"> - Closed Market</p>
+                            <p id="google-map"></p>
+                            <p>I created an interactive map for PCFMA with Google Maps APIv3. I designed the icons and info windows, and programmed logic in PHP with MySQL queries to create a dynamic array of JavaScript objects to power the UI in HTML and CSS. I also led the definition of the most important items to be included in each info window: the market name, Facebook link, dates and times open (and open or closed icon depending on today's date), and directions link to open natively in Google Maps. </p>
+                            <p>This example is hard-coded in JavaScript with an assumed current date in March to show the open and closed season examples.</p>
+                            <div class="text-center">
+                              <ul>
+                                <li>Dynamic PHP/MySQL Queries</li>
+                                <li>Database Management</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>JavaScript</li>
+                                <li>Google Maps APIv3</li>
+                              </ul>
+                            </div>
+                            
+              <h4 class="text-center margin-btm-lrg"><a href="https://github.com/jpostdesign/code_samples" target="_blank" class="btn btn-lg btn-primary"><i class="fa fa-github"></i> Pure PHP and JS <br />Code Samples on GitHub</a></h4>
+                    </div> 
+           </div>
+        </div>
 
 		  
           <!-- hide pixel perfect PSD to HTML -- with additional comment out for <noscript> fallback comments --  
@@ -1161,7 +1269,7 @@
          
         <div class="row" id="multimediaVisualDesign">
           <div class="col-sm-8 col-sm-offset-2 margin-btm-lrg" id="rubix_utopia_app">
-            <!-- <h3 class="margin-btm-lrg text-center">Multimedia Visual Design</h3> -->
+            <h3 class="margin-btm-lrg text-center">Multimedia Visual Design</h3>
               <a class="imgGroup02" title="&quot;Utopia iPad Magazine&quot; &bull; InDesign, Adobe Digital Publishing Suite, After Effects" href="img/web_design/full/full_rubix_utopia_app.png" >
                 <span data-class="img-border img-rounded"  data-picture data-alt="Utopia iPad Magazine App">
                     <span data-src="img/web_design/full/full_rubix_utopia_app.png"></span>
